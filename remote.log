@@ -1,1 +1,2 @@
 7822c677-53ce-4f8a-b37f-8c66381769cd autoenable=true location=https://gin.g-node.org/nipreps-data/bootcamp-geneva-2024 name=gin-src type=git timestamp=1724761532.889355983s
+cdce474b-6611-44f1-bfa3-bd7066f1d6cb autoenable=true encryption=none externaltype=osf name=osf-storage node=hp2yu type=external timestamp=1724761629.856613786s
