@@ -1,0 +1,83 @@
+[environment]
+cache_path = "PosixPath('/home/oesteban/.cache/mriqc')"
+cpu_count = 20
+exec_env = "posix"
+free_mem = 6.2
+freesurfer_home = "/opt/freesurfer"
+overcommit_policy = "heuristic"
+overcommit_limit = "50%"
+nipype_version = "1.8.6"
+synthstrip_path = "PosixPath('/opt/freesurfer/models/synthstrip.1.pt')"
+templateflow_version = "24.2.0"
+total_memory = 62.510196685791016
+version = "24.1.0.dev15+g9586c867.d20240825"
+
+[execution]
+ants_float = false
+bids_dir = "/data/datasets/bootcamp/bids"
+bids_dir_datalad = false
+bids_database_dir = "/data/derivatives/bootcamp-geneva/mriqc-24.0.2/.bids_db"
+bids_database_wipe = false
+cwd = "/home/oesteban/tmp/mriqc-bootcamp"
+datalad_get = true
+debug = false
+dry_run = false
+dsname = "bootcamp"
+float32 = true
+layout = "BIDS Layout: /data/datasets/bootcamp/bids"
+log_dir = "/data/derivatives/bootcamp-geneva/mriqc-24.0.2/logs"
+log_level = 15
+modalities = [ "T1w", "T2w", "bold", "dwi",]
+no_sub = true
+notrack = false
+output_dir = "/data/derivatives/bootcamp-geneva/mriqc-24.0.2"
+participant_label = [ "11", "14", "15", "16", "17",]
+pdb = false
+reports_only = false
+resource_monitor = false
+run_uuid = "20240827-155912_77ed18af-830f-4a2e-ab20-af47508dc383"
+templateflow_home = "/data/datasets/templateflow-s3"
+upload_strict = false
+verbose_reports = false
+webapi_url = "https://mriqc.nimh.nih.gov:443/api/v1"
+work_dir = "/home/oesteban/tmp/mriqc-bootcamp/work"
+write_graph = false
+
+[workflow]
+analysis_level = [ "group",]
+deoblique = false
+despike = false
+fd_thres = 0.2
+fd_radius = 50
+fft_spikes_detector = false
+inputs_path = "PosixPath('/home/oesteban/tmp/mriqc-bootcamp/work/inputs-20240827-155912_77ed18af-830f-4a2e-ab20-af47508dc383.pkl')"
+min_len_dwi = 7
+min_len_bold = 5
+species = "human"
+template_id = "MNI152NLin2009cAsym"
+
+[nipype]
+crashfile_format = "txt"
+get_linked_libs = false
+local_hash_check = true
+nprocs = 20
+omp_nthreads = 12
+plugin = "MultiProc"
+remove_node_directories = false
+resource_monitor = false
+stop_on_first_crash = true
+
+[settings]
+file_path = "/data/derivatives/bootcamp-geneva/mriqc-24.0.2/logs/config-20240827-155912_77ed18af-830f-4a2e-ab20-af47508dc383.toml"
+start_time = 1724767152.907204
+
+[execution.bids_filters]
+
+[workflow.biggest_file_gb]
+t1w = 0.0267276456579566
+t2w = 0.016536526381969452
+bold = 0.7253480479121208
+
+[nipype.plugin_args]
+maxtasksperchild = 1
+raise_insufficient = false

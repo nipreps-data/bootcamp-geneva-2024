@@ -1,0 +1,52 @@
+------------------------------------------------------------------
+  Running MRIQC version 24.1.0.dev15+g9586c867.d20240825
+  ----------------------------------------------------------------
+
+  NOTICE
+  Copyright © The NiPreps Developers.
+  
+  This product includes software developed by
+  the NiPreps Community (https://nipreps.org/).
+  
+  Portions of this software were developed at the Department of
+  Psychology at Stanford University, Stanford, CA, US.
+  
+  This software contains code ultimately derived from the
+  PCP Quality Assessment Protocol (QAP;
+  http://preprocessed-connectomes-project.org/quality-assessment-protocol)
+  by C. Craddock, S. Giavasis, D. Clark, Z. Shezhad, and J. Pellman.
+  
+  This software is also distributed as a Docker container image.
+  The bootstrapping file for the image ("Dockerfile") is licensed
+  under the MIT License.
+
+  ----------------------------------------------------------------
+
+  * BIDS dataset path: /data/datasets/bootcamp/bids.
+  * Output folder: /data/derivatives/bootcamp-geneva/mriqc-24.0.2.
+  * Analysis levels: ['group'].
+------------------------------------------------------------------
+
+2024-08-27 15:59:20 | IMPORTANT | mriqc            | Extracting metadata and entities for 10 input runs of modality 't1w'...
+2024-08-27 15:59:21 | IMPORTANT | mriqc            | File size ('t1w'): 0.03|0.02 GB [maximum|average].
+2024-08-27 15:59:21 | IMPORTANT | mriqc            | Extracting metadata and entities for 5 input runs of modality 't2w'...
+2024-08-27 15:59:22 | IMPORTANT | mriqc            | File size ('t2w'): 0.02|0.01 GB [maximum|average].
+2024-08-27 15:59:22 | IMPORTANT | mriqc            | Extracting metadata and entities for 10 input runs of modality 'bold'...
+2024-08-27 15:59:23 | IMPORTANT | mriqc            | File size ('bold'): 0.73|0.63 GB [maximum|average].
+2024-08-27 15:59:23 | INFO     | mriqc            | MRIQC config file: /home/oesteban/tmp/mriqc-bootcamp/work/config-20240827-155912_77ed18af-830f-4a2e-ab20-af47508dc383.toml.
+------------------------------------------------------------------
+Generating group reports
+------------------------------------------------------------------
+
+2024-08-27 15:59:23 | INFO     | mriqc            | Generated summary TSV table for T1w data: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_T1w.tsv
+2024-08-27 15:59:23 | INFO     | mriqc            | Group-T1w report generated: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_T1w.html
+2024-08-27 15:59:23 | INFO     | mriqc            | Generated summary TSV table for T2w data: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_T2w.tsv
+2024-08-27 15:59:23 | INFO     | mriqc            | Group-T2w report generated: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_T2w.html
+2024-08-27 15:59:23 | INFO     | mriqc            | Generated summary TSV table for bold data: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_bold.tsv
+2024-08-27 15:59:23 | INFO     | mriqc            | Group-bold report generated: /data/derivatives/bootcamp-geneva/mriqc-24.0.2/group_bold.html
+2024-08-27 15:59:23 | INFO     | mriqc            | Group level finished successfully.
+2024-08-27 15:59:23 | INFO     | mriqc            | Generating BIDS derivatives metadata.
+----------------------------------------------------------------
+  MRIQC completed (elapsed time 00h 00min 10s).
+----------------------------------------------------------------
+
