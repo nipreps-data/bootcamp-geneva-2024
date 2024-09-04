@@ -1,0 +1,724 @@
+Logfile for bbregister
+mar 03 sep 2024 09:50:28 CEST
+
+setenv SUBJECTS_DIR /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/scripts
+/opt/freesurfer/bin/bbregister --s sub-16 --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz --lta /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.lta --init-coreg --T2 --gm-proj-abs 2 --wm-proj-abs 1 --no-coreg-ref-mask
+
+bbregister 7.3.2
+Linux hos70297 5.19.0-50-generic #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+mri_convert /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii
+mri_convert /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii 
+reading from /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz...
+TR=2650.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (0.997704, 0.013476, -0.0663691)
+j_ras = (-0.0135157, 0.999909, -0.000149002)
+k_ras = (0.066361, 0.00104568, 0.997795)
+writing to /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii...
+mri_coreg --s sub-16 --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --regdat /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.init.dat --reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/mri_coreg.lta --nthreads 4 --dof 6 --sep 4 --ftol .0001 --linmintol .01 --no-ref-mask
+
+$Id: mri_coreg.c,v 1.27 2016/04/30 15:11:49 greve Exp $
+cwd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/scripts
+cmdline mri_coreg --s sub-16 --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --regdat /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.init.dat --reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/mri_coreg.lta --nthreads 4 --dof 6 --sep 4 --ftol .0001 --linmintol .01 --no-ref-mask 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+dof    6
+nsep    1
+cras0    1
+ftol    0.000100
+linmintol    0.010000
+bf       1
+bflim    30.000000
+bfnsamp    30
+SmoothRef 0
+SatPct    99.990000
+MovOOB 0
+optschema 1
+Seed 53
+Reading in mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii
+Reading in ref /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/brainmask.mgz
+Setting cras translation parameters to align volume centers
+Creating random numbers for coordinate dithering
+Performing intensity dithering
+Performing intensity dithering on mov with computed dither
+Init matrix params -3.2950  2.3473  1.6157  0.0000  0.0000  0.0000  1.0000  1.0000  1.0000  0.0000  0.0000  0.0000 
+Initial parameters to be opt -3.2950  2.3473  1.6157  0.0000  0.0000  0.0000 
+Separation list (1):  4   min = 4
+DoSmoothing 1
+DoCoordDither 1
+DoIntensityDither 1
+nitersmax 4
+ftol 1.000e-04
+linmintol 1.000e-02
+SatPct 99.990000
+Hist FWHM 7.000000 7.000000
+nthreads 4
+movsat = 305.0026
+mov gstd 1.9140 1.9168 1.9168
+Smoothing mov
+refsat = 114.0000
+ref gstd 1.9141 1.9141 1.9141
+Smoothing ref
+COREGpreproc() done
+Testing if mov and target overlap
+Init cost   -1.0484207838
+nhits = 248504 out of 23887872, Percent Overlap:  66.6
+Initial  RefRAS-to-MovRAS
+ 1.00000   0.00000   0.00000  -3.29495;
+ 0.00000   1.00000   0.00000   2.34734;
+ 0.00000   0.00000   1.00000   1.61574;
+ 0.00000   0.00000   0.00000   1.00000;
+Initial  RefVox-to-MovVox
+-0.99597   0.06625   0.01345   234.98410;
+ 0.01400   0.00015   1.03594  -7.18916;
+-0.06875  -1.03375   0.00108   301.55392;
+ 0.00000   0.00000   0.00000   1.00000;
+sep = 4 -----------------------------------
+COREGoptBruteForce() 30 1 30
+Turning on MovOOB for BruteForce Search
+#BF# sep= 4 iter=0 lim=30.0 delta=2.00   0.70505  -1.65266   1.61574   0.00000   0.00000   0.00000   -1.0457544
+Turning  MovOOB back off after brute force search
+
+
+---------------------------------
+Init Powel Params dof = 6: 0.705048 -1.652657 1.615738 0.000000 0.000000 0.000000 
+Starting OpenPowel2(), sep = 4
+InitialCost        -1.0529422760 
+#@#  4  188  0.70505 -1.65266 1.61574 0.00000 0.00000 0.00000   -1.0529423
+fs_powell::minimize
+  nparams 6
+  maxfev 4
+  ftol   0.000100
+  linmin_xtol_   0.010000
+  powell nthiter 0: fret = -1.052942
+#@#  4  195  0.51334 -1.65266 1.61574 0.00000 0.00000 0.00000   -1.0529584
+#@#  4  199  0.54065 -1.65266 1.61574 0.00000 0.00000 0.00000   -1.0529585
+#@#  4  203  0.54065 -0.65266 1.61574 0.00000 0.00000 0.00000   -1.0532063
+#@#  4  208  0.54065 -0.74893 1.61574 0.00000 0.00000 0.00000   -1.0532076
+#@#  4  209  0.54065 -0.72537 1.61574 0.00000 0.00000 0.00000   -1.0532080
+#@#  4  218  0.54065 -0.72537 1.68102 0.00000 0.00000 0.00000   -1.0532088
+#@#  4  219  0.54065 -0.72537 1.66821 0.00000 0.00000 0.00000   -1.0532093
+#@#  4  227  0.54065 -0.72537 1.66821 -0.16092 0.00000 0.00000   -1.0532129
+#@#  4  228  0.54065 -0.72537 1.66821 -0.17120 0.00000 0.00000   -1.0532140
+#@#  4  230  0.54065 -0.72537 1.66821 -0.24099 0.00000 0.00000   -1.0532141
+#@#  4  234  0.54065 -0.72537 1.66821 -0.22792 0.00000 0.00000   -1.0532149
+  powell nthiter 1: fret = -1.053215
+#@#  4  263  0.47300 -0.72537 1.66821 -0.22792 0.00000 0.00000   -1.0532166
+#@#  4  273  0.48300 -0.73923 1.66821 -0.22792 0.00000 0.00000   -1.0532169
+#@#  4  301  0.48300 -0.73923 1.66821 -0.22792 0.01000 0.00000   -1.0532172
+#@#  4  312  0.48300 -0.73923 1.66821 -0.22792 0.02000 -0.01000   -1.0532173
+#@#  4  313  0.48300 -0.73923 1.66821 -0.22792 0.02000 -0.02000   -1.0532174
+Powell done niters total = 1
+OptTimeSec 10.1 sec
+OptTimeMin  0.17 min
+nEvals 314
+Final optimized parameters   0.48300317  -0.73923087   1.66821456  -0.22791919   0.02000000  -0.02000000 
+Final matrix parameters  0.4830 -0.7392  1.6682 -0.2279  0.0200 -0.0394  1.0000  1.0000  1.0000  0.0000  0.0000  0.0000 
+Final cost   -1.053217366468394
+ 
+
+---------------------------------
+Final  RefRAS-to-MovRAS
+ 1.00000  -0.00035   0.00035   0.48300;
+ 0.00035   0.99999  -0.00398  -0.73923;
+-0.00035   0.00398   0.99999   1.66821;
+ 0.00000   0.00000   0.00000   1.00000;
+Final  RefVox-to-MovVox
+-0.99600   0.06596   0.01284   239.75333;
+ 0.01364   0.00428   1.03594  -11.64115;
+-0.06839  -1.03376   0.00517   301.36438;
+ 0.00000   0.00000   0.00000   1.00000;
+Final matrix parameters  0.4830 -0.7392  1.6682 -0.2279  0.0200 -0.0200  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 
+Final opt parameters  0.4830 -0.7392  1.6682 -0.2279  0.0200 -0.0200 
+nhits = 248617 out of 23887872, Percent Overlap:  66.6
+mri_coreg RunTimeSec 78.2 sec
+To check run:
+   tkregisterfv --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --targ /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/brainmask.mgz --reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/mri_coreg.lta --s sub-16 --surfs 
+
+mri_coreg done
+
+mri_segreg --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --init-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.init.dat --out-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white --gm-proj-abs 2 --gm-gt-wm 0.5
+7.3.2
+setenv SUBJECTS_DIR /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/scripts
+mri_segreg --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --init-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.init.dat --out-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white --gm-proj-abs 2 --gm-gt-wm 0.5 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+movvol /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii
+regfile /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.init.dat
+subject sub-16
+dof 6
+outregfile /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 100
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000100
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1725994492
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+-0.99773  -0.01286   0.06607  -2.94135;
+ 0.06601   0.00499   0.99781  -0.46358;
+ 0.01317  -0.99990   0.00413   2.99520;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Loading mov
+ExcludeZeroVoxels 1
+Reading in targ vol /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig.mgz
+Projecting LH Surfs
+Loading lh.white surf
+GM Proj: 0 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white surf
+Projecting RH Surfs
+Using lh.cortex.label
+Using rh.cortex.label
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.978306
+ 1  -25.0 -25.0  25.0   1.024605
+ 2  -25.0  25.0 -25.0   1.016071
+ 3  -25.0  25.0  25.0   0.999616
+ 4   25.0 -25.0 -25.0   0.986505
+ 5   25.0 -25.0  25.0   1.031854
+ 6   25.0  25.0 -25.0   1.015805
+ 7   25.0  25.0  25.0   0.989042
+REL:  8  0.202545    8.041804  1.005226 rel = 0.201492 
+Initial costs ----------------
+Number of surface hits 3510
+WM  Intensity    62.0315 +/-  12.5791
+Ctx Intensity    85.4031 +/-  28.1990
+Pct Contrast     28.2693 +/-  28.9178
+Cost   0.2025
+RelCost   0.2015
+
+------------------------------------
+Brute force preopt -4 4 4, n = 729
+     0  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000      0.9478   0.9478  0.0
+     6  -4.0000  -4.0000  -4.0000  -4.0000   4.0000  -4.0000      0.9298   0.9298  0.0
+     7  -4.0000  -4.0000  -4.0000  -4.0000   4.0000   0.0000      0.9213   0.9213  0.0
+    15  -4.0000  -4.0000  -4.0000   0.0000   4.0000  -4.0000      0.8320   0.8320  0.0
+    39  -4.0000  -4.0000   0.0000   0.0000   0.0000  -4.0000      0.7971   0.7971  0.0
+   102  -4.0000   0.0000  -4.0000   4.0000   0.0000  -4.0000      0.7668   0.7668  0.0
+   120  -4.0000   0.0000   0.0000   0.0000   0.0000  -4.0000      0.6772   0.6772  0.0
+   301   0.0000  -4.0000   4.0000  -4.0000   0.0000   0.0000      0.6739   0.6739  0.0
+   346   0.0000   0.0000  -4.0000   4.0000   0.0000   0.0000      0.5972   0.5972  0.0
+   364   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000      0.2025   0.2025  0.0
+Brute Force --------------------------
+Min cost was 0.202545
+Number of iterations   729
+Search time 1.502104 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.000   0.000  0.000  0.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+fs_powell::minimize
+  nparams 6
+  maxfev 36
+  ftol   0.000100
+  linmin_xtol_   0.001000
+  powell nthiter 0: fret = 0.202545
+   6  0.382  0.000  0.000  0.000  0.000  0.000   0.1859787920
+   9  0.444  0.000  0.000  0.000  0.000  0.000   0.1849398299
+  12  0.463  0.000  0.000  0.000  0.000  0.000   0.1847772688
+  16  0.460  0.000  0.000  0.000  0.000  0.000   0.1847750762
+  17  0.461  0.000  0.000  0.000  0.000  0.000   0.1847749847
+  20  0.461 -1.618  0.000  0.000  0.000  0.000   0.1500147831
+  21  0.461 -0.937  0.000  0.000  0.000  0.000   0.1473679165
+  23  0.461 -0.579  0.000  0.000  0.000  0.000   0.1462207648
+  25  0.461 -0.740  0.000  0.000  0.000  0.000   0.1455021036
+  26  0.461 -0.717  0.000  0.000  0.000  0.000   0.1450989204
+  42  0.461 -0.717 -0.016  0.000  0.000  0.000   0.1449784178
+  51  0.461 -0.717 -0.016  0.382  0.000  0.000   0.1409528309
+  55  0.461 -0.717 -0.016  0.339  0.000  0.000   0.1406606639
+  57  0.461 -0.717 -0.016  0.350  0.000  0.000   0.1406521767
+  61  0.461 -0.717 -0.016  0.348  0.000  0.000   0.1406492818
+  71  0.461 -0.717 -0.016  0.348 -0.007  0.000   0.1406041277
+  75  0.461 -0.717 -0.016  0.348 -0.005  0.000   0.1405990540
+  86  0.461 -0.717 -0.016  0.348 -0.005 -0.015   0.1404154536
+  89  0.461 -0.717 -0.016  0.348 -0.005 -0.020   0.1403777009
+  90  0.461 -0.717 -0.016  0.348 -0.005 -0.023   0.1403748545
+  91  0.461 -0.717 -0.016  0.348 -0.005 -0.022   0.1403733541
+  powell nthiter 1: fret = 0.140373
+ 102  0.433 -0.717 -0.016  0.348 -0.005 -0.022   0.1401016127
+ 103  0.437 -0.717 -0.016  0.348 -0.005 -0.022   0.1400781136
+ 104  0.439 -0.717 -0.016  0.348 -0.005 -0.022   0.1400762031
+ 115  0.439 -0.694 -0.016  0.348 -0.005 -0.022   0.1397144730
+ 117  0.439 -0.698 -0.016  0.348 -0.005 -0.022   0.1396777524
+ 126  0.439 -0.698 -0.275  0.348 -0.005 -0.022   0.1383191058
+ 130  0.439 -0.698 -0.276  0.348 -0.005 -0.022   0.1382901579
+ 132  0.439 -0.698 -0.288  0.348 -0.005 -0.022   0.1381582768
+ 133  0.439 -0.698 -0.287  0.348 -0.005 -0.022   0.1381580419
+ 144  0.439 -0.698 -0.287  0.304 -0.005 -0.022   0.1377135481
+ 145  0.439 -0.698 -0.287  0.277 -0.005 -0.022   0.1376067235
+ 147  0.439 -0.698 -0.287  0.287 -0.005 -0.022   0.1375034617
+ 156  0.439 -0.698 -0.287  0.287 -0.071 -0.022   0.1345668887
+ 164  0.439 -0.698 -0.287  0.287 -0.067 -0.022   0.1345539482
+ 174  0.439 -0.698 -0.287  0.287 -0.067 -0.258   0.1343092313
+ 175  0.439 -0.698 -0.287  0.287 -0.067 -0.150   0.1334872076
+ 177  0.439 -0.698 -0.287  0.287 -0.067 -0.195   0.1334639777
+ 178  0.439 -0.698 -0.287  0.287 -0.067 -0.219   0.1334362798
+ 180  0.439 -0.698 -0.287  0.287 -0.067 -0.210   0.1333850714
+ 181  0.439 -0.698 -0.287  0.287 -0.067 -0.209   0.1333840627
+  powell nthiter 2: fret = 0.133384
+ 192  0.467 -0.698 -0.287  0.287 -0.067 -0.209   0.1333748329
+ 193  0.454 -0.698 -0.287  0.287 -0.067 -0.209   0.1332198385
+ 202  0.454 -0.847 -0.287  0.287 -0.067 -0.209   0.1330838925
+ 203  0.454 -0.782 -0.287  0.287 -0.067 -0.209   0.1314697522
+ 205  0.454 -0.793 -0.287  0.287 -0.067 -0.209   0.1313676915
+ 207  0.454 -0.795 -0.287  0.287 -0.067 -0.209   0.1313598520
+ 208  0.454 -0.798 -0.287  0.287 -0.067 -0.209   0.1313564478
+ 218  0.454 -0.798 -0.358  0.287 -0.067 -0.209   0.1310207940
+ 219  0.454 -0.798 -0.359  0.287 -0.067 -0.209   0.1310176980
+ 222  0.454 -0.798 -0.377  0.287 -0.067 -0.209   0.1310044518
+ 223  0.454 -0.798 -0.371  0.287 -0.067 -0.209   0.1309970292
+ 224  0.454 -0.798 -0.370  0.287 -0.067 -0.209   0.1309964004
+ 225  0.454 -0.798 -0.367  0.287 -0.067 -0.209   0.1309957775
+ 227  0.454 -0.798 -0.368  0.287 -0.067 -0.209   0.1309957548
+ 234  0.454 -0.798 -0.368  0.349 -0.067 -0.209   0.1307013427
+ 235  0.454 -0.798 -0.368  0.339 -0.067 -0.209   0.1305881310
+ 245  0.454 -0.798 -0.368  0.339 -0.103 -0.209   0.1303397986
+ 246  0.454 -0.798 -0.368  0.339 -0.120 -0.209   0.1302168678
+ 253  0.454 -0.798 -0.368  0.339 -0.121 -0.209   0.1302166410
+ 264  0.454 -0.798 -0.368  0.339 -0.121 -0.215   0.1302098145
+  powell nthiter 3: fret = 0.130210
+ 276  0.473 -0.798 -0.368  0.339 -0.121 -0.215   0.1295692837
+ 277  0.484 -0.798 -0.368  0.339 -0.121 -0.215   0.1294109331
+ 290  0.484 -0.802 -0.368  0.339 -0.121 -0.215   0.1293938310
+ 302  0.484 -0.802 -0.375  0.339 -0.121 -0.215   0.1293669320
+ 303  0.484 -0.802 -0.373  0.339 -0.121 -0.215   0.1293559414
+ 304  0.484 -0.802 -0.372  0.339 -0.121 -0.215   0.1293552130
+ 317  0.484 -0.802 -0.372  0.340 -0.121 -0.215   0.1293538764
+ 328  0.484 -0.802 -0.372  0.340 -0.114 -0.215   0.1293311365
+ 329  0.484 -0.802 -0.372  0.340 -0.116 -0.215   0.1293242101
+ 330  0.484 -0.802 -0.372  0.340 -0.117 -0.215   0.1293237902
+ 340  0.484 -0.802 -0.372  0.340 -0.117 -0.192   0.1291721272
+ 341  0.484 -0.802 -0.372  0.340 -0.117 -0.196   0.1291688523
+ 343  0.484 -0.802 -0.372  0.340 -0.117 -0.203   0.1291473092
+ 345  0.484 -0.802 -0.372  0.340 -0.117 -0.202   0.1291467442
+ 353  0.495 -0.804 -0.374  0.341 -0.115 -0.197   0.1290238601
+ 354  0.498 -0.805 -0.374  0.341 -0.115 -0.196   0.1290166956
+ 355  0.499 -0.805 -0.375  0.341 -0.115 -0.196   0.1290164650
+  powell nthiter 4: fret = 0.129016
+ 375  0.499 -0.805 -0.375  0.341 -0.115 -0.192   0.1290061482
+ 388  0.499 -0.806 -0.375  0.341 -0.115 -0.192   0.1290060321
+ 399  0.499 -0.806 -0.370  0.341 -0.115 -0.192   0.1290004010
+ 401  0.499 -0.806 -0.372  0.341 -0.115 -0.192   0.1289899422
+ 415  0.499 -0.806 -0.372  0.343 -0.115 -0.192   0.1289881495
+ 426  0.499 -0.806 -0.372  0.343 -0.114 -0.192   0.1289841641
+ 427  0.499 -0.806 -0.372  0.343 -0.113 -0.192   0.1289833165
+ 434  0.510 -0.808 -0.373  0.343 -0.111 -0.188   0.1289799016
+ 435  0.505 -0.807 -0.373  0.343 -0.112 -0.190   0.1289599215
+ 438  0.504 -0.807 -0.373  0.343 -0.112 -0.190   0.1289597131
+  powell nthiter 5: fret = 0.128960
+ 453  0.504 -0.807 -0.373  0.343 -0.112 -0.186   0.1289558765
+ 454  0.504 -0.807 -0.373  0.343 -0.112 -0.188   0.1289491953
+ 466  0.504 -0.808 -0.373  0.343 -0.112 -0.188   0.1289486443
+ 511  0.507 -0.808 -0.373  0.343 -0.112 -0.186   0.1289428553
+ 512  0.507 -0.808 -0.373  0.343 -0.111 -0.186   0.1289425538
+ 517  0.507 -0.808 -0.373  0.343 -0.111 -0.186   0.1289424370
+ 520  0.510 -0.810 -0.374  0.343 -0.111 -0.183   0.1289377647
+ 527  0.510 -0.809 -0.373  0.343 -0.111 -0.183   0.1289374946
+ 529  0.510 -0.809 -0.373  0.343 -0.111 -0.183   0.1289374706
+ 531  0.510 -0.809 -0.373  0.343 -0.111 -0.183   0.1289374064
+ 532  0.510 -0.809 -0.373  0.343 -0.111 -0.183   0.1289373927
+  powell nthiter 6: fret = 0.128937
+ 545  0.511 -0.809 -0.374  0.343 -0.111 -0.183   0.1289371371
+ 546  0.511 -0.809 -0.374  0.343 -0.111 -0.183   0.1289370763
+ 560  0.511 -0.808 -0.374  0.343 -0.111 -0.183   0.1289362028
+ 572  0.511 -0.808 -0.372  0.343 -0.111 -0.183   0.1289328704
+ 587  0.511 -0.808 -0.372  0.344 -0.111 -0.183   0.1289322987
+ 599  0.511 -0.808 -0.372  0.344 -0.112 -0.183   0.1289305819
+ 601  0.514 -0.810 -0.373  0.344 -0.112 -0.179   0.1289301394
+ 605  0.512 -0.809 -0.372  0.344 -0.112 -0.181   0.1289275602
+ 609  0.513 -0.809 -0.372  0.344 -0.112 -0.180   0.1289274208
+ 617  0.513 -0.809 -0.372  0.344 -0.112 -0.180   0.1289274189
+Powell done niters = 6
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.995754
+ 1  -25.0 -25.0  25.0   0.994727
+ 2  -25.0  25.0 -25.0   1.026025
+ 3  -25.0  25.0  25.0   0.994410
+ 4   25.0 -25.0 -25.0   0.965515
+ 5   25.0 -25.0  25.0   0.992081
+ 6   25.0  25.0 -25.0   1.022372
+ 7   25.0  25.0  25.0   1.001381
+REL:  8  0.128927    7.992264  0.999033 rel = 0.129052 
+Number of iterations     6
+Min cost was 0.128927
+Number of FunctionCalls   618
+TolPowell 0.000100
+nMaxItersPowell 36
+OptimizationTime 1.165426 sec
+Parameters at optimum (transmm)  0.51262 -0.80946 -0.37245
+Parameters at optimum (rotdeg)  0.34439 -0.11168 -0.18046 
+Final costs ----------------
+Number of surface hits 3510
+WM  Intensity    61.2129 +/-  12.3214
+Ctx Intensity    85.1396 +/-  24.7906
+Pct Contrast     30.1444 +/-  25.3118
+Cost   0.1289
+RelCost   0.2015
+Reg at min cost was 
+-0.99754  -0.01088   0.06920  -2.43605;
+ 0.06908   0.01104   0.99755  -1.28175;
+ 0.01162  -0.99988   0.01026   2.61417;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Writing optimal reg to /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat, type = 14 
+Original Reg 
+-0.99773  -0.01286   0.06607  -2.94135;
+ 0.06601   0.00499   0.99781  -0.46358;
+ 0.01317  -0.99990   0.00413   2.99520;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+-0.00019  -0.00198  -0.00312  -0.50529;
+-0.00306  -0.00604   0.00026   0.81817;
+ 0.00155  -0.00002  -0.00613   0.38103;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Computing change in lh position
+LH rmsDiffMean 1.216764
+Computing change in rh position
+Surface-RMS-Diff-mm 1.162115 0.156006 1.521184
+mri_segreg done
+mri_segreg --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --init-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat --out-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5
+7.3.2
+setenv SUBJECTS_DIR /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/scripts
+mri_segreg --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii --init-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat --out-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+movvol /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/template.nii
+regfile /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/tmp.bbregister.2727190/bbr.pass1.dat
+subject sub-16
+dof 6
+outregfile /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 1.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1725620147
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+-0.99754  -0.01088   0.06920  -2.43605;
+ 0.06908   0.01104   0.99755  -1.28175;
+ 0.01162  -0.99988   0.01026   2.61417;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Loading mov
+ExcludeZeroVoxels 1
+Reading in targ vol /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig.mgz
+Projecting LH Surfs
+Loading lh.white surf
+GM Proj: 0 0.500000 2.000000
+WM Proj: 0 0.500000 1.000000
+Projecting RH Surfs
+Loading rh.white surf
+Projecting RH Surfs
+Using lh.cortex.label
+Using rh.cortex.label
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.996231
+ 1  -25.0 -25.0  25.0   1.007610
+ 2  -25.0  25.0 -25.0   1.000821
+ 3  -25.0  25.0  25.0   0.999027
+ 4   25.0 -25.0 -25.0   0.984979
+ 5   25.0 -25.0  25.0   1.013365
+ 6   25.0  25.0 -25.0   1.013023
+ 7   25.0  25.0  25.0   1.015619
+REL:  8  0.110376    8.030676  1.003834 rel = 0.109954 
+Initial costs ----------------
+Number of surface hits 350328
+WM  Intensity    60.1113 +/-  11.2247
+Ctx Intensity    84.8358 +/-  25.2224
+Pct Contrast     31.3019 +/-  24.7656
+Cost   0.1104
+RelCost   0.1100
+
+------------------------------------
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.1100   0.1100  0.0
+     3  -0.1000  -0.1000  -0.1000  -0.1000   0.0000  -0.1000      0.1078   0.1078  0.0
+     4  -0.1000  -0.1000  -0.1000  -0.1000   0.0000   0.0000      0.1076   0.1076  0.0
+     7  -0.1000  -0.1000  -0.1000  -0.1000   0.1000   0.0000      0.1071   0.1071  0.0
+     9  -0.1000  -0.1000  -0.1000   0.0000  -0.1000  -0.1000      0.1050   0.1050  0.0
+    12  -0.1000  -0.1000  -0.1000   0.0000   0.0000  -0.1000      0.1040   0.1040  0.0
+    21  -0.1000  -0.1000  -0.1000   0.1000   0.0000  -0.1000      0.1018   0.1018  0.0
+    43  -0.1000  -0.1000   0.0000   0.0000   0.1000   0.0000      0.1017   0.1017  0.0
+   124  -0.1000   0.0000   0.0000   0.0000   0.1000   0.0000      0.1016   0.1016  0.0
+   142  -0.1000   0.0000   0.1000  -0.1000   0.1000   0.0000      0.1014   0.1014  0.0
+   205  -0.1000   0.1000   0.0000   0.0000   0.1000   0.0000      0.1013   0.1013  0.0
+   449   0.0000   0.1000   0.0000   0.0000   0.1000   0.1000      0.1005   0.1005  0.0
+Brute Force --------------------------
+Min cost was 0.100451
+Number of iterations   729
+Search time 1.357037 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.100   0.000  0.000  0.100  0.100 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0.1
+2 0
+3 0
+4 0.1
+5 0.1
+fs_powell::minimize
+  nparams 6
+  maxfev 36
+  ftol   0.000000
+  linmin_xtol_   0.001000
+  powell nthiter 0: fret = 0.110788
+   7 -0.301  0.100  0.000  0.000  0.100  0.100   0.1077116148
+   8 -0.300  0.100  0.000  0.000  0.100  0.100   0.1077093279
+  10 -0.289  0.100  0.000  0.000  0.100  0.100   0.1076986631
+  11 -0.290  0.100  0.000  0.000  0.100  0.100   0.1076985841
+  19 -0.290 -0.085  0.000  0.000  0.100  0.100   0.1072424603
+  20 -0.290 -0.041  0.000  0.000  0.100  0.100   0.1072383446
+  21 -0.290 -0.060  0.000  0.000  0.100  0.100   0.1072382993
+  22 -0.290 -0.051  0.000  0.000  0.100  0.100   0.1072367714
+  23 -0.290 -0.050  0.000  0.000  0.100  0.100   0.1072367371
+  30 -0.290 -0.050  0.382  0.000  0.100  0.100   0.1046018611
+  31 -0.290 -0.050  0.288  0.000  0.100  0.100   0.1043868416
+  32 -0.290 -0.050  0.299  0.000  0.100  0.100   0.1043719940
+  33 -0.290 -0.050  0.309  0.000  0.100  0.100   0.1043660843
+  35 -0.290 -0.050  0.306  0.000  0.100  0.100   0.1043648029
+  44 -0.290 -0.050  0.306 -0.049  0.100  0.100   0.1039846505
+  46 -0.290 -0.050  0.306 -0.087  0.100  0.100   0.1038991801
+  49 -0.290 -0.050  0.306 -0.091  0.100  0.100   0.1038966815
+  59 -0.290 -0.050  0.306 -0.091  0.079  0.100   0.1038546329
+  60 -0.290 -0.050  0.306 -0.091  0.047  0.100   0.1038463852
+  62 -0.290 -0.050  0.306 -0.091  0.059  0.100   0.1037828915
+  63 -0.290 -0.050  0.306 -0.091  0.063  0.100   0.1037782946
+  78 -0.290 -0.050  0.306 -0.091  0.063  0.097   0.1037758277
+  79 -0.290 -0.050  0.306 -0.091  0.063  0.096   0.1037756521
+  powell nthiter 1: fret = 0.103776
+  92 -0.293 -0.050  0.306 -0.091  0.063  0.096   0.1037746142
+  94 -0.292 -0.050  0.306 -0.091  0.063  0.096   0.1037743993
+ 101 -0.292 -0.063  0.306 -0.091  0.063  0.096   0.1037226413
+ 104 -0.292 -0.081  0.306 -0.091  0.063  0.096   0.1037149783
+ 107 -0.292 -0.084  0.306 -0.091  0.063  0.096   0.1037149615
+ 117 -0.292 -0.084  0.309 -0.091  0.063  0.096   0.1037057393
+ 119 -0.292 -0.084  0.321 -0.091  0.063  0.096   0.1036876863
+ 120 -0.292 -0.084  0.319 -0.091  0.063  0.096   0.1036854789
+ 121 -0.292 -0.084  0.318 -0.091  0.063  0.096   0.1036849647
+ 131 -0.292 -0.084  0.318 -0.105  0.063  0.096   0.1036736102
+ 133 -0.292 -0.084  0.318 -0.104  0.063  0.096   0.1036732142
+ 144 -0.292 -0.084  0.318 -0.104  0.061  0.096   0.1036716428
+ 145 -0.292 -0.084  0.318 -0.104  0.060  0.096   0.1036709799
+ 146 -0.292 -0.084  0.318 -0.104  0.059  0.096   0.1036708221
+ 156 -0.292 -0.084  0.318 -0.104  0.059  0.088   0.1036604997
+ 157 -0.292 -0.084  0.318 -0.104  0.059  0.083   0.1036575369
+  powell nthiter 2: fret = 0.103658
+ 171 -0.294 -0.084  0.318 -0.104  0.059  0.083   0.1036560301
+ 195 -0.294 -0.084  0.330 -0.104  0.059  0.083   0.1036486861
+ 196 -0.294 -0.084  0.326 -0.104  0.059  0.083   0.1036472853
+ 197 -0.294 -0.084  0.327 -0.104  0.059  0.083   0.1036470457
+ 198 -0.294 -0.084  0.328 -0.104  0.059  0.083   0.1036470384
+ 210 -0.294 -0.084  0.328 -0.105  0.059  0.083   0.1036463018
+ 222 -0.294 -0.084  0.328 -0.105  0.054  0.083   0.1036440033
+ 223 -0.294 -0.084  0.328 -0.105  0.055  0.083   0.1036437983
+ 235 -0.294 -0.084  0.328 -0.105  0.055  0.074   0.1036428503
+ 236 -0.294 -0.084  0.328 -0.105  0.055  0.078   0.1036409384
+  powell nthiter 3: fret = 0.103641
+ 254 -0.293 -0.084  0.328 -0.105  0.055  0.078   0.1036401817
+ 255 -0.292 -0.084  0.328 -0.105  0.055  0.078   0.1036400011
+ 266 -0.292 -0.083  0.328 -0.105  0.055  0.078   0.1036398562
+ 277 -0.292 -0.083  0.329 -0.105  0.055  0.078   0.1036393649
+ 278 -0.292 -0.083  0.330 -0.105  0.055  0.078   0.1036389906
+ 280 -0.292 -0.083  0.331 -0.105  0.055  0.078   0.1036387795
+ 305 -0.292 -0.083  0.331 -0.105  0.054  0.078   0.1036376336
+ 306 -0.292 -0.083  0.331 -0.105  0.053  0.078   0.1036374423
+ 320 -0.292 -0.083  0.331 -0.105  0.053  0.077   0.1036371945
+  powell nthiter 4: fret = 0.103637
+ 337 -0.291 -0.083  0.331 -0.105  0.053  0.077   0.1036366599
+ 384 -0.291 -0.082  0.331 -0.105  0.052  0.077   0.1036363138
+ 396 -0.291 -0.082  0.331 -0.105  0.052  0.078   0.1036361212
+  powell nthiter 5: fret = 0.103636
+ 413 -0.290 -0.082  0.331 -0.105  0.052  0.078   0.1036356887
+ 424 -0.290 -0.084  0.331 -0.105  0.052  0.078   0.1036355230
+ 426 -0.290 -0.083  0.331 -0.105  0.052  0.078   0.1036354198
+ 436 -0.290 -0.083  0.328 -0.105  0.052  0.078   0.1036350717
+ 438 -0.290 -0.083  0.329 -0.105  0.052  0.078   0.1036348178
+ 450 -0.290 -0.083  0.329 -0.104  0.052  0.078   0.1036346090
+ 463 -0.290 -0.083  0.329 -0.104  0.051  0.078   0.1036344802
+ 475 -0.290 -0.083  0.329 -0.104  0.051  0.079   0.1036340749
+ 477 -0.289 -0.085  0.328 -0.103  0.050  0.080   0.1036335903
+  powell nthiter 6: fret = 0.103634
+ 488 -0.289 -0.083  0.329 -0.104  0.051  0.079   0.1036335564
+ 511 -0.289 -0.083  0.328 -0.104  0.051  0.079   0.1036332839
+ 525 -0.289 -0.083  0.328 -0.103  0.051  0.079   0.1036332393
+ 550 -0.289 -0.083  0.328 -0.103  0.051  0.081   0.1036327539
+  powell nthiter 7: fret = 0.103633
+ 560 -0.288 -0.083  0.328 -0.103  0.051  0.081   0.1036325972
+ 583 -0.288 -0.083  0.327 -0.103  0.051  0.081   0.1036324347
+ 608 -0.288 -0.083  0.327 -0.103  0.050  0.081   0.1036321558
+ 621 -0.288 -0.083  0.327 -0.103  0.050  0.082   0.1036320348
+ 623 -0.287 -0.083  0.326 -0.103  0.049  0.083   0.1036315897
+ 632 -0.287 -0.083  0.326 -0.103  0.049  0.083   0.1036315445
+ 633 -0.287 -0.083  0.326 -0.103  0.049  0.083   0.1036315338
+ 637 -0.287 -0.083  0.326 -0.103  0.049  0.083   0.1036315026
+ 638 -0.287 -0.083  0.326 -0.103  0.049  0.083   0.1036314794
+  powell nthiter 8: fret = 0.103631
+ 652 -0.286 -0.083  0.326 -0.103  0.049  0.083   0.1036314305
+ 718 -0.286 -0.083  0.326 -0.103  0.049  0.084   0.1036314167
+  powell nthiter 9: fret = 0.103631
+Powell done niters = 9
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.994854
+ 1  -25.0 -25.0  25.0   1.004791
+ 2  -25.0  25.0 -25.0   0.999005
+ 3  -25.0  25.0  25.0   1.000408
+ 4   25.0 -25.0 -25.0   0.983243
+ 5   25.0 -25.0  25.0   1.009185
+ 6   25.0  25.0 -25.0   1.012141
+ 7   25.0  25.0  25.0   1.016405
+REL:  8  0.103631    8.020033  1.002504 rel = 0.103373 
+Number of iterations     9
+Min cost was 0.103631
+Number of FunctionCalls   796
+TolPowell 0.000000
+nMaxItersPowell 36
+OptimizationTime 76.065497 sec
+Parameters at optimum (transmm) -0.28568 -0.08325  0.32642
+Parameters at optimum (rotdeg) -0.10324  0.04872  0.08387 
+Final costs ----------------
+Number of surface hits 350328
+WM  Intensity    59.7124 +/-  11.1379
+Ctx Intensity    84.6815 +/-  24.4041
+Pct Contrast     31.9436 +/-  24.5019
+Cost   0.1036
+RelCost   0.1100
+Reg at min cost was 
+-0.99763  -0.01174   0.06774  -2.71763;
+ 0.06764   0.00922   0.99767  -1.36385;
+ 0.01234  -0.99989   0.00840   2.94497;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Writing optimal reg to /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat, type = 14 
+Original Reg 
+-0.99754  -0.01088   0.06920  -2.43605;
+ 0.06908   0.01104   0.99755  -1.28175;
+ 0.01162  -0.99988   0.01026   2.61417;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+ 0.00009   0.00086   0.00145   0.28158;
+ 0.00144   0.00182  -0.00012   0.08210;
+-0.00072   0.00001   0.00186  -0.33079;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Computing change in lh position
+LH rmsDiffMean 0.408792
+Computing change in rh position
+Surface-RMS-Diff-mm 0.424811 0.035963 0.526166
+mri_segreg done
+MinCost: 0.103631 59.712369 84.681452 31.943598 
+tkregister2_cmdl --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz --reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat --noedit --ltaout /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.lta
+INFO: no target volume specified, assuming FreeSurfer orig volume.
+target  volume orig
+movable volume /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz
+reg file       /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.dat
+LoadVol        0
+ZeroCRAS       0
+7.3.2
+Diagnostic Level -1
+---- Input registration matrix --------
+-0.99763  -0.01174   0.06774  -2.71763;
+ 0.06764   0.00922   0.99767  -1.36385;
+ 0.01234  -0.99989   0.00840   2.94497;
+ 0.00000   0.00000   0.00000   1.00000;
+float2int = 0
+---------------------------------------
+INFO: loading target /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig.mgz
+INFO: target does not conform to COR format, so I'm going to
+reslice to COR. This will not affect the final registration.
+Ttarg: --------------------
+-1.00000   0.00000   0.00000   128.00000;
+ 0.00000   0.00000   1.00000  -128.00000;
+ 0.00000  -1.00000   0.00000   128.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+INFO: loading movable /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz
+Tmov: --------------------
+-0.80000   0.00000   0.00000   83.20000;
+ 0.00000   0.00000   0.77083  -110.99995;
+ 0.00000  -0.77083   0.00000   110.99995;
+ 0.00000   0.00000   0.00000   1.00000;
+mkheaderreg = 0, float2int = 0
+---- Input registration matrix --------
+-0.99763  -0.01174   0.06774  -2.71762;
+ 0.06764   0.00922   0.99767  -1.36386;
+ 0.01234  -0.99989   0.00840   2.94495;
+ 0.00000   0.00000   0.00000   1.00000;
+Determinant -1
+subject = sub-16
+RegMat ---------------------------
+-0.99763  -0.01174   0.06774  -2.71763;
+ 0.06764   0.00922   0.99767  -1.36385;
+ 0.01234  -0.99989   0.00840   2.94497;
+ 0.00000   0.00000   0.00000   1.00000;
+Cleaning up
+ 
+Started at mar 03 sep 2024 09:50:28 CEST 
+Ended   at mar 03 sep 2024 09:53:18 CEST
+BBR-Run-Time-Sec 170
+ 
+bbregister Done
+To check results, run:
+tkregisterfv --mov /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/orig/T2raw.mgz --reg /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri/transforms/T2raw.auto.lta --surfs  --sd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer

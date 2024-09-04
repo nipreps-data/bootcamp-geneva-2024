@@ -1,0 +1,53 @@
+Log file for defect2seg
+mar 03 sep 2024 12:04:59 CEST
+
+setenv SUBJECTS_DIR /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/scripts
+/opt/freesurfer/bin/defect2seg --s sub-17 --rh-only --cortex
+
+freesurfer-linux-ubuntu22_x86_64-7.3.2-20220804-6354275
+defect2seg 7.3.2
+Linux hos70297 5.19.0-50-generic #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+pid 2768122
+mri_label2label --label-cortex /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.orig.nofix /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/mri/aseg.presurf.mgz 0 /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/label/rh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+16 non-cortical segments detected
+only using segment with 11702 vertices
+erasing segment 1 (vno[0] = 148834)
+erasing segment 2 (vno[0] = 150094)
+erasing segment 3 (vno[0] = 151363)
+erasing segment 4 (vno[0] = 152627)
+erasing segment 5 (vno[0] = 153644)
+erasing segment 6 (vno[0] = 153764)
+erasing segment 7 (vno[0] = 154945)
+erasing segment 8 (vno[0] = 158456)
+erasing segment 9 (vno[0] = 158474)
+erasing segment 10 (vno[0] = 159700)
+erasing segment 11 (vno[0] = 159725)
+erasing segment 12 (vno[0] = 160854)
+erasing segment 13 (vno[0] = 160934)
+erasing segment 14 (vno[0] = 161973)
+erasing segment 15 (vno[0] = 168058)
+mri_label2vol --defects /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.orig.nofix /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.defect_labels /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/mri/orig.mgz 2000 0 /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/mri/rh.surface.defects.mgz /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/label/rh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/label/rh.nofix.cortex.label
+Changing input type 0 to MRI_INT
+Converting defects to volume: offset=2000, merge=0
+Writing to /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/mri/rh.surface.defects.mgz
+mris_defects_pointset -s /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.orig.nofix -d /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.defect_labels -o /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.defects.pointset --label /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/label/rh.nofix.cortex.label
+Reading in surface /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.orig.nofix
+Reading in defect segmentation /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/surf/rh.defect_labels
+Reading in label /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-17/label/rh.nofix.cortex.label
+#VMPC# mris_defects_pointset 1659376
+mris_defects_pointset done
+ 
+Started at mar 03 sep 2024 12:04:59 CEST 
+Ended   at mar 03 sep 2024 12:05:22 CEST
+Defect2seg-Run-Time-Sec 23
+Defect2seg-Run-Time-Min 0.46
+Defect2seg-Run-Time-Hours 0.01
+ 
+defect2seg Done

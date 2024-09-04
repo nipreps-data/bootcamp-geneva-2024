@@ -1,0 +1,94 @@
+status file for recon-all
+lun 02 sep 2024 14:45:52 CEST
+#@# T2/FLAIR Input lun 02 sep 2024 14:45:55 CEST
+#@# MotionCor lun 02 sep 2024 14:45:59 CEST
+#@# Talairach lun 02 sep 2024 14:46:07 CEST
+#@# Talairach Failure Detection lun 02 sep 2024 14:50:00 CEST
+#@# Nu Intensity Correction lun 02 sep 2024 14:50:00 CEST
+#@# Intensity Normalization lun 02 sep 2024 14:54:53 CEST
+recon-all -s sub-14 finished without error at lun 02 sep 2024 14:58:53 CEST
+
+
+
+#New# invocation of recon-all 
+
+
+
+status file for recon-all
+lun 02 sep 2024 16:17:26 CEST
+#@# EM Registration lun 02 sep 2024 16:17:26 CEST
+recon-all -s sub-14 finished without error at lun 02 sep 2024 16:19:34 CEST
+
+
+
+#New# invocation of recon-all 
+
+
+
+status file for recon-all
+lun 02 sep 2024 17:59:47 CEST
+#@# CA Normalize lun 02 sep 2024 17:59:47 CEST
+#@# CA Reg lun 02 sep 2024 18:00:54 CEST
+#@# SubCort Seg lun 02 sep 2024 18:40:55 CEST
+#@# CC Seg lun 02 sep 2024 19:26:51 CEST
+#@# Merge ASeg lun 02 sep 2024 19:27:44 CEST
+#@# Intensity Normalization2 lun 02 sep 2024 19:27:44 CEST
+#@# Mask BFS lun 02 sep 2024 19:30:47 CEST
+#@# WM Segmentation lun 02 sep 2024 19:30:48 CEST
+#@# Fill lun 02 sep 2024 19:33:34 CEST
+recon-all -s sub-14 finished without error at lun 02 sep 2024 19:34:35 CEST
+
+
+
+#New# invocation of recon-all 
+
+
+
+status file for recon-all
+mar 03 sep 2024 04:23:40 CEST
+#@# Refine Pial Surfs w/ T2/FLAIR mar 03 sep 2024 04:23:40 CEST
+#@# white curv lh mar 03 sep 2024 05:45:42 CEST
+#@# white area lh mar 03 sep 2024 05:45:42 CEST
+#@# pial curv lh mar 03 sep 2024 05:45:42 CEST
+#@# pial area lh mar 03 sep 2024 05:45:45 CEST
+#@# thickness lh mar 03 sep 2024 05:45:46 CEST
+#@# area and vertex vol lh mar 03 sep 2024 05:46:33 CEST
+#@# white curv rh mar 03 sep 2024 05:46:35 CEST
+#@# white area rh mar 03 sep 2024 05:46:35 CEST
+#@# pial curv rh mar 03 sep 2024 05:46:35 CEST
+#@# pial area rh mar 03 sep 2024 05:46:38 CEST
+#@# thickness rh mar 03 sep 2024 05:46:39 CEST
+#@# area and vertex vol rh mar 03 sep 2024 05:47:25 CEST
+#@# Cortical ribbon mask mar 03 sep 2024 05:47:28 CEST
+recon-all -s sub-14 finished without error at mar 03 sep 2024 05:59:31 CEST
+
+
+
+#New# invocation of recon-all 
+
+
+
+status file for recon-all
+mar 03 sep 2024 15:16:12 CEST
+#@# white curv lh mar 03 sep 2024 15:16:13 CEST
+#@# white area lh mar 03 sep 2024 15:16:13 CEST
+#@# pial curv lh mar 03 sep 2024 15:16:13 CEST
+#@# pial area lh mar 03 sep 2024 15:16:13 CEST
+#@# thickness lh mar 03 sep 2024 15:16:13 CEST
+#@# area and vertex vol lh mar 03 sep 2024 15:16:13 CEST
+#@# white curv rh mar 03 sep 2024 15:16:13 CEST
+#@# white area rh mar 03 sep 2024 15:16:13 CEST
+#@# pial curv rh mar 03 sep 2024 15:16:13 CEST
+#@# pial area rh mar 03 sep 2024 15:16:13 CEST
+#@# thickness rh mar 03 sep 2024 15:16:13 CEST
+#@# area and vertex vol rh mar 03 sep 2024 15:16:13 CEST
+#@# Curvature Stats lh mar 03 sep 2024 15:16:13 CEST
+#@# Curvature Stats rh mar 03 sep 2024 15:16:17 CEST
+#@# Relabel Hypointensities mar 03 sep 2024 15:16:21 CEST
+#@# APas-to-ASeg mar 03 sep 2024 15:16:45 CEST
+#@# AParc-to-ASeg aparc mar 03 sep 2024 15:17:09 CEST
+#@# AParc-to-ASeg aparc.a2009s mar 03 sep 2024 15:18:34 CEST
+#@# AParc-to-ASeg aparc.DKTatlas mar 03 sep 2024 15:19:58 CEST
+#@# WMParc mar 03 sep 2024 15:21:23 CEST
+#@# ASeg Stats mar 03 sep 2024 15:24:49 CEST
+recon-all -s sub-14 finished without error at mar 03 sep 2024 15:25:18 CEST

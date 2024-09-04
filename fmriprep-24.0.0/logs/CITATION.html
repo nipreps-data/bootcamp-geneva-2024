@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>"fMRIPrep citation boilerplate"</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<p>Results included in this manuscript come from preprocessing performed
+using <em>fMRIPrep</em> 24.1.0.dev28+gfe7c9ff8.d20240822 (<span
+class="citation" data-cites="fmriprep1">Esteban et al. (2019)</span>;
+<span class="citation" data-cites="fmriprep2">Esteban et al.
+(2018)</span>; RRID:SCR_016216), which is based on <em>Nipype</em> 1.8.6
+(<span class="citation" data-cites="nipype1">K. Gorgolewski et al.
+(2011)</span>; <span class="citation" data-cites="nipype2">K. J.
+Gorgolewski et al. (2018)</span>; RRID:SCR_002502).</p>
+<dl>
+<dt>Anatomical data preprocessing</dt>
+<dd>
+<p>A total of 1 T1-weighted (T1w) images were found within the input
+BIDS dataset. The T1w image was corrected for intensity non-uniformity
+(INU) with <code>N4BiasFieldCorrection</code> <span class="citation"
+data-cites="n4">(Tustison et al. 2010)</span>, distributed with ANTs
+2.5.1 <span class="citation" data-cites="ants">(Avants et al. 2008,
+RRID:SCR_004757)</span>, and used as T1w-reference throughout the
+workflow. The T1w-reference was then skull-stripped with a
+<em>Nipype</em> implementation of the
+<code>antsBrainExtraction.sh</code> workflow (from ANTs), using
+OASIS30ANTs as target template. Brain tissue segmentation of
+cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was
+performed on the brain-extracted T1w using <code>fast</code> <span
+class="citation" data-cites="fsl_fast">(FSL 6.0.7.12, RRID:SCR_002823,
+Zhang, Brady, and Smith 2001)</span>. Brain surfaces were reconstructed
+using <code>recon-all</code> <span class="citation"
+data-cites="fs_reconall">(FreeSurfer 7.3.2, RRID:SCR_001847, Dale,
+Fischl, and Sereno 1999)</span>, and the brain mask estimated previously
+was refined with a custom variation of the method to reconcile
+ANTs-derived and FreeSurfer-derived segmentations of the cortical
+gray-matter of Mindboggle <span class="citation"
+data-cites="mindboggle">(RRID:SCR_002438, Klein et al. 2017)</span>. A
+T2-weighted image was used to improve pial surface refinement. Brain
+surfaces were reconstructed using <code>recon-all</code> <span
+class="citation" data-cites="fs_reconall">(FreeSurfer 7.3.2,
+RRID:SCR_001847, Dale, Fischl, and Sereno 1999)</span>, and the brain
+mask estimated previously was refined with a custom variation of the
+method to reconcile ANTs-derived and FreeSurfer-derived segmentations of
+the cortical gray-matter of Mindboggle <span class="citation"
+data-cites="mindboggle">(RRID:SCR_002438, Klein et al. 2017)</span>.
+Volume-based spatial normalization to one standard space
+(MNI152NLin2009cAsym) was performed through nonlinear registration with
+<code>antsRegistration</code> (ANTs 2.5.1), using brain-extracted
+versions of both T1w reference and the T1w template. The following
+template was were selected for spatial normalization and accessed with
+<em>TemplateFlow</em> <span class="citation"
+data-cites="templateflow">(24.2.0, Ciric et al. 2022)</span>: <em>ICBM
+152 Nonlinear Asymmetrical template version 2009c</em> [<span
+class="citation" data-cites="mni152nlin2009casym">Fonov et al.
+(2009)</span>, RRID:SCR_008796; TemplateFlow ID:
+MNI152NLin2009cAsym].</p>
+</dd>
+</dl>
+<p>Many internal operations of <em>fMRIPrep</em> use <em>Nilearn</em>
+0.10.4 <span class="citation" data-cites="nilearn">(Abraham et al. 2014,
+RRID:SCR_001362)</span>, mostly within the functional processing
+workflow. For more details of the pipeline, see <a
+href="https://fmriprep.readthedocs.io/en/latest/workflows.html"
+title="FMRIPrep&#39;s documentation">the section corresponding to
+workflows in <em>fMRIPrep</em>’s documentation</a>.</p>
+<h3 id="copyright-waiver">Copyright Waiver</h3>
+<p>The above boilerplate text was automatically generated by fMRIPrep
+with the express intention that users should copy and paste this text
+into their manuscripts <em>unchanged</em>. It is released under the <a
+href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
+license.</p>
+<h3 class="unnumbered" id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-nilearn" class="csl-entry" role="listitem">
+Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, Philippe
+Gervais, Andreas Mueller, Jean Kossaifi, Alexandre Gramfort, Bertrand
+Thirion, and Gael Varoquaux. 2014. <span>“Machine Learning for
+Neuroimaging with Scikit-Learn.”</span> <em>Frontiers in
+Neuroinformatics</em> 8. <a
+href="https://doi.org/10.3389/fninf.2014.00014">https://doi.org/10.3389/fninf.2014.00014</a>.
+</div>
+<div id="ref-ants" class="csl-entry" role="listitem">
+Avants, B. B., C. L. Epstein, M. Grossman, and J. C. Gee. 2008.
+<span>“Symmetric Diffeomorphic Image Registration with
+Cross-Correlation: Evaluating Automated Labeling of Elderly and
+Neurodegenerative Brain.”</span> <em>Medical Image Analysis</em> 12 (1):
+26–41. <a
+href="https://doi.org/10.1016/j.media.2007.06.004">https://doi.org/10.1016/j.media.2007.06.004</a>.
+</div>
+<div id="ref-templateflow" class="csl-entry" role="listitem">
+Ciric, R., William H. Thompson, R. Lorenz, M. Goncalves, E. MacNicol, C.
+J. Markiewicz, Y. O. Halchenko, et al. 2022.
+<span>“<span>TemplateFlow</span>: <span>FAIR</span>-Sharing of
+Multi-Scale, Multi-Species Brain Models.”</span> <em>Nature Methods</em>
+19: 1568–71. <a
+href="https://doi.org/10.1038/s41592-022-01681-2">https://doi.org/10.1038/s41592-022-01681-2</a>.
+</div>
+<div id="ref-fs_reconall" class="csl-entry" role="listitem">
+Dale, Anders M., Bruce Fischl, and Martin I. Sereno. 1999.
+<span>“Cortical Surface-Based Analysis: I. Segmentation and Surface
+Reconstruction.”</span> <em>NeuroImage</em> 9 (2): 179–94. <a
+href="https://doi.org/10.1006/nimg.1998.0395">https://doi.org/10.1006/nimg.1998.0395</a>.
+</div>
+<div id="ref-fmriprep2" class="csl-entry" role="listitem">
+Esteban, Oscar, Ross Blair, Christopher J. Markiewicz, Shoshana L.
+Berleant, Craig Moodie, Feilong Ma, Ayse Ilkay Isik, et al. 2018.
+<span>“fMRIPrep 24.1.0.dev28+gfe7c9ff8.d20240822.”</span>
+<em>Software</em>. <a
+href="https://doi.org/10.5281/zenodo.852659">https://doi.org/10.5281/zenodo.852659</a>.
+</div>
+<div id="ref-fmriprep1" class="csl-entry" role="listitem">
+Esteban, Oscar, Christopher Markiewicz, Ross W Blair, Craig Moodie, Ayse
+Ilkay Isik, Asier Erramuzpe Aliaga, James Kent, et al. 2019.
+<span>“<span class="nocase">fMRIPrep</span>: A Robust Preprocessing
+Pipeline for Functional <span>MRI</span>.”</span> <em>Nature
+Methods</em> 16: 111–16. <a
+href="https://doi.org/10.1038/s41592-018-0235-4">https://doi.org/10.1038/s41592-018-0235-4</a>.
+</div>
+<div id="ref-mni152nlin2009casym" class="csl-entry" role="listitem">
+Fonov, VS, AC Evans, RC McKinstry, CR Almli, and DL Collins. 2009.
+<span>“Unbiased Nonlinear Average Age-Appropriate Brain Templates from
+Birth to Adulthood.”</span> <em>NeuroImage</em> 47, Supplement 1: S102.
+<a
+href="https://doi.org/10.1016/S1053-8119(09)70884-5">https://doi.org/10.1016/S1053-8119(09)70884-5</a>.
+</div>
+<div id="ref-nipype1" class="csl-entry" role="listitem">
+Gorgolewski, K., C. D. Burns, C. Madison, D. Clark, Y. O. Halchenko, M.
+L. Waskom, and S. Ghosh. 2011. <span>“Nipype: A Flexible, Lightweight
+and Extensible Neuroimaging Data Processing Framework in Python.”</span>
+<em>Frontiers in Neuroinformatics</em> 5: 13. <a
+href="https://doi.org/10.3389/fninf.2011.00013">https://doi.org/10.3389/fninf.2011.00013</a>.
+</div>
+<div id="ref-nipype2" class="csl-entry" role="listitem">
+Gorgolewski, Krzysztof J., Oscar Esteban, Christopher J. Markiewicz,
+Erik Ziegler, David Gage Ellis, Michael Philipp Notter, Dorota Jarecka,
+et al. 2018. <span>“Nipype.”</span> <em>Software</em>. <a
+href="https://doi.org/10.5281/zenodo.596855">https://doi.org/10.5281/zenodo.596855</a>.
+</div>
+<div id="ref-mindboggle" class="csl-entry" role="listitem">
+Klein, Arno, Satrajit S. Ghosh, Forrest S. Bao, Joachim Giard, Yrjö
+Häme, Eliezer Stavsky, Noah Lee, et al. 2017. <span>“Mindboggling
+Morphometry of Human Brains.”</span> <em>PLOS Computational Biology</em>
+13 (2): e1005350. <a
+href="https://doi.org/10.1371/journal.pcbi.1005350">https://doi.org/10.1371/journal.pcbi.1005350</a>.
+</div>
+<div id="ref-n4" class="csl-entry" role="listitem">
+Tustison, N. J., B. B. Avants, P. A. Cook, Y. Zheng, A. Egan, P. A.
+Yushkevich, and J. C. Gee. 2010. <span>“N4ITK: Improved N3 Bias
+Correction.”</span> <em>IEEE Transactions on Medical Imaging</em> 29
+(6): 1310–20. <a
+href="https://doi.org/10.1109/TMI.2010.2046908">https://doi.org/10.1109/TMI.2010.2046908</a>.
+</div>
+<div id="ref-fsl_fast" class="csl-entry" role="listitem">
+Zhang, Y., M. Brady, and S. Smith. 2001. <span>“Segmentation of Brain
+<span>MR</span> Images Through a Hidden Markov Random Field Model and
+the Expectation-Maximization Algorithm.”</span> <em>IEEE Transactions on
+Medical Imaging</em> 20 (1): 45–57. <a
+href="https://doi.org/10.1109/42.906424">https://doi.org/10.1109/42.906424</a>.
+</div>
+</div>
+</body>
+</html>

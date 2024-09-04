@@ -1,0 +1,6 @@
+{
+  "RawSources": [
+    "/data/datasets/bootcamp/bidsdata/sub-17/anat/sub-17_acq-denoised_T1w.nii.gz"
+  ],
+  "Type": "ROI"
+}

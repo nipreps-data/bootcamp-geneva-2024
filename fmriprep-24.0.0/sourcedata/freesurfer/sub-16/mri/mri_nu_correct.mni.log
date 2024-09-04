@@ -1,0 +1,108 @@
+/data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --cm --n 2 --ants-n4
+nIters 2
+mri_nu_correct.mni 7.3.2
+Linux hos70297 5.19.0-50-generic #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+lun 02 sep 2024 15:15:53 CEST
+tmpdir is ./tmp.mri_nu_correct.mni.2624744
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.2624744/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_binarize --i ./tmp.mri_nu_correct.mni.2624744/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.2624744/ones.mgz
+
+7.3.2
+cwd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-16/mri
+cmdline mri_binarize --i ./tmp.mri_nu_correct.mni.2624744/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.2624744/ones.mgz 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+
+input      ./tmp.mri_nu_correct.mni.2624744/nu0.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.2624744/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Starting parallel 1
+Found 23887872 values in range
+Counting number of voxels in first frame
+Found 23887871 voxels in final mask
+Writing output to ./tmp.mri_nu_correct.mni.2624744/ones.mgz
+Count: 23887871 12166993.828553 23887872 99.999996
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.2624744/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.2624744/sum.junk --avgwf ./tmp.mri_nu_correct.mni.2624744/input.mean.dat
+
+7.3.2
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.2624744/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.2624744/sum.junk --avgwf ./tmp.mri_nu_correct.mni.2624744/input.mean.dat 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.2624744/ones.mgz
+Loading orig.mgz
+Voxel Volume is 0.509338 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.2624744/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.2624744/ones.mgz --i ./tmp.mri_nu_correct.mni.2624744/nu0.mgz --sum ./tmp.mri_nu_correct.mni.2624744/sum.junk --avgwf ./tmp.mri_nu_correct.mni.2624744/output.mean.dat
+
+7.3.2
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.2624744/ones.mgz --i ./tmp.mri_nu_correct.mni.2624744/nu0.mgz --sum ./tmp.mri_nu_correct.mni.2624744/sum.junk --avgwf ./tmp.mri_nu_correct.mni.2624744/output.mean.dat 
+sysname  Linux
+hostname hos70297
+machine  x86_64
+user     oesteban
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.2624744/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.2624744/nu0.mgz
+Voxel Volume is 0.509338 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.2624744/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.2624744/nu0.mgz ./tmp.mri_nu_correct.mni.2624744/nu0.mgz mul 1.02643771385217768994
+mri_convert ./tmp.mri_nu_correct.mni.2624744/nu0.mgz nu.mgz --like orig.mgz
+mri_convert ./tmp.mri_nu_correct.mni.2624744/nu0.mgz nu.mgz --like orig.mgz 
+reading from ./tmp.mri_nu_correct.mni.2624744/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -6.76019e-09, 0)
+j_ras = (4.66471e-09, 2.91545e-10, -1)
+k_ras = (2.05903e-09, 1, -8.74634e-10)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 5 seconds.
+FIRST_PERCENTILE 0.010000
+WM_PERCENTILE    0.900000
+MAX_R 50.000000
+i1 = 2, i2 = 73
+#mri_make_uchar# mapping  5 167 to  3 110  :  b -0.476761 m 0.662941 : thresh 0.71916 maxsat 385.369 : nzero 14869135 nsat 0
+ 
+ 
+lun 02 sep 2024 15:19:48 CEST
+mri_nu_correct.mni done

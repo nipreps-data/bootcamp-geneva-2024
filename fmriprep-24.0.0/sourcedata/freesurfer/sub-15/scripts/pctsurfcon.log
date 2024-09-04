@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+mar 03 sep 2024 07:03:03 CEST
+setenv SUBJECTS_DIR /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer
+cd /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/sourcedata/freesurfer/sub-15/scripts
+/opt/freesurfer/bin/pctsurfcon
+pctsurfcon 7.3.2
+Linux hos70297 5.19.0-50-generic #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+Cleaning up

@@ -1,0 +1,6 @@
+{
+  "RawSources": [
+    "/data/datasets/bootcamp/bidsdata/sub-14/anat/sub-14_acq-denoised_T1w.nii.gz"
+  ],
+  "Type": "Brain"
+}
