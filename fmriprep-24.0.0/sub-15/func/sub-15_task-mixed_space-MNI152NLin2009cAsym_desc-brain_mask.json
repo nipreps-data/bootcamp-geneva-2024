@@ -1,0 +1,10 @@
+{
+  "Sources": [
+    "bids:raw:sub-15/func/sub-15_task-mixed_bold.nii.gz",
+    "bids::sub-15/func/sub-15_task-mixed_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt",
+    "bids::sub-15/func/sub-15_task-mixed_from-boldref_to-gre15_mode-image_xfm.txt",
+    "bids::sub-15/func/sub-15_task-mixed_from-boldref_to-T1w_mode-image_desc-coreg_xfm.txt",
+    "bids::sub-15/anat/sub-15_acq-denoised_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+    "bids:templateflow:tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz"
+  ]
+}

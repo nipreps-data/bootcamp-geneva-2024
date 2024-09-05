@@ -1,0 +1,10 @@
+{
+  "Sources": [
+    "bids:raw:sub-17/func/sub-17_task-rest_bold.nii.gz",
+    "bids::sub-17/func/sub-17_task-rest_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt",
+    "bids::sub-17/func/sub-17_task-rest_from-boldref_to-gre17_mode-image_xfm.txt",
+    "bids::sub-17/func/sub-17_task-rest_from-boldref_to-T1w_mode-image_desc-coreg_xfm.txt",
+    "bids::sub-17/anat/sub-17_acq-denoised_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+    "bids:templateflow:tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz"
+  ]
+}

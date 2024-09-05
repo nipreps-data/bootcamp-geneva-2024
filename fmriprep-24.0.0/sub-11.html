@@ -18,6 +18,23 @@
         <li class="nav-item"><a class="nav-link" href="#Summary">Summary</a></li>
         <li class="nav-item"><a class="nav-link" href="#Anatomical">Anatomical</a></li>
         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbar<em>B<sub>0</sub></em> field mapping" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#<em>B<sub>0</sub></em> field mapping">
+            <em>B<sub>0</sub></em> field mapping
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#acquisition-None_datatype-figures_desc-phasediff_fmapid-gre11_subject-11_suffix-fieldmap">Reports for: fmapid <span class="bids-entity">gre11</span>.</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarFunctional" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#Functional">
+            Functional
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#acquisition-None_datatype-figures_desc-summary_subject-11_suffix-bold_task-mixed">Reports for: task <span class="bids-entity">mixed</span>.</a></li>
+                <li><a class="dropdown-item" href="#acquisition-None_datatype-figures_desc-summary_subject-11_suffix-bold_task-rest">Reports for: task <span class="bids-entity">rest</span>.</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#About">
             About
             </a>
@@ -87,13 +104,173 @@ Problem loading figure sub-11/figures/sub-11_acq-denoised_space-MNI152NLin2009cA
 
         </div>
     </div>
+    <div id="<em>B<sub>0</sub></em> field mapping" class="mt-5">
+    <h1 class="sub-report-title pt-5 ps-4"><em>B<sub>0</sub></em> field mapping</h1>
+        <div id="acquisition-None_datatype-figures_desc-phasediff_fmapid-gre11_subject-11_suffix-fieldmap" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: fmapid <span class="bids-entity">gre11</span>.</h2><h3 class="run-title mt-3">Preprocessed mapping of phase-difference acquisition</h3><p class="elem-desc">Hover over the panels with the mouse pointer to also visualize the intensity of the field inhomogeneity in Hertz.</p><p class="elem-caption">Inhomogeneities of the <em>B<sub>0</sub></em> field introduce (oftentimes severe) spatial distortions along the phase-encoding direction of the image. A Gradient-Recalled Echo (GRE) scheme was included for the mapping of the <em>B<sub>0</sub></em> inhomogeneities by subtracting the phase maps obtained at two subsequent echoes. The plot below shows an anatomical "magnitude" reference and the corresponding fieldmap.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_fmapid-gre11_desc-phasediff_fieldmap.svg" style="">
+Problem loading figure sub-11/figures/sub-11_fmapid-gre11_desc-phasediff_fieldmap.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_fmapid-gre11_desc-phasediff_fieldmap.svg" target="_blank">sub-11/figures/sub-11_fmapid-gre11_desc-phasediff_fieldmap.svg</a></small>
+
+        </div>
+    </div>
+    <div id="Functional" class="mt-5">
+    <h1 class="sub-report-title pt-5 ps-4">Functional</h1>
+        <div id="acquisition-None_datatype-figures_desc-summary_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: task <span class="bids-entity">mixed</span>.</h2>                    <details open>
+		<summary>Summary</summary>
+		<ul class="elem-desc">
+			<li>Original orientation: LAS</li>
+			<li>Repetition time (TR): 1.5s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Single-echo EPI sequence.</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: FMB (fieldmap-based) - phase-difference map</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Non-steady-state volumes: 1</li>
+		</ul>
+		</details>
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-fmapCoreg_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Alignment between the anatomical reference of the fieldmap and the target EPI</h3><p class="elem-caption">The estimated fieldmap was aligned to the corresponding EPI reference with a rigid-registration process of the fieldmap reference image, using <code>antsRegistration</code>. Overlaid on top of the co-registration results, the final BOLD mask is represented with a red contour for reference.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-mixed_desc-fmapCoreg_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-mixed_desc-fmapCoreg_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-fmapCoreg_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-fmapCoreg_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-sdc_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Susceptibility distortion correction</h3><p class="elem-caption">Results of performing susceptibility distortion correction (SDC) on the BOLD reference image. The "distorted" image is the image that would be used to align to the anatomical reference if SDC were not applied. The "corrected" image is the image that was used.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-mixed_desc-sdc_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-mixed_desc-sdc_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-sdc_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-sdc_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-coreg_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Alignment of functional and anatomical MRI data (coregistration)</h3><p class="elem-caption">This panel shows the alignment of the reference EPI (BOLD) image to the anatomical (T1-weighted) image. The reference EPI has been contrast enhanced and susceptibility-distortion corrected (if applicable) for improved anatomical fidelity. The anatomical image has been resampled into EPI space, as well as the anatomical white matter mask, which appears as a red contour.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-mixed_desc-coreg_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-mixed_desc-coreg_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-coreg_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-coreg_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-rois_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Brain mask and (anatomical/temporal) CompCor ROIs</h3><p class="elem-caption">Brain mask calculated on the BOLD signal (red contour), along with the regions of interest (ROIs) used for the estimation of physiological and movement confounding components that can be then used as nuisance regressors in analysis.<br /> The <em>anatomical CompCor</em> ROI (magenta contour) is a mask combining CSF and WM (white-matter), where voxels containing a minimal partial volume of GM have been removed.<br /> The <em>temporal CompCor</em> ROI (blue contour) contains the top 2% most variable voxels within the brain mask.<br /> The <em>brain edge</em> (or <em>crown</em>) ROI (green contour) picks signals outside but close to the brain, which are decomposed into 24 principal components.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-mixed_desc-rois_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-rois_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-rois_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-compcorvar_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Variance explained by t/aCompCor components</h3><p class="elem-caption">The cumulative variance explained by the first k components of the <em>t/aCompCor</em> decomposition, plotted for all values of <em>k</em>. The number of components that must be included in the model in order to explain some fraction of variance in the decomposition mask can be used as a feature selection criterion for confound regression.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-mixed_desc-compcorvar_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-compcorvar_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-compcorvar_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-carpetplot_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">BOLD Summary</h3><p class="elem-caption">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br /> A carpet plot shows the time series for all voxels within the brain mask, or if <code>--cifti-output</code> was enabled, all grayordinates. See the figure legend for specific color mappings. "Ctx" = cortex, "Cb" = cerebellum, "WM" = white matter, "CSF" = cerebrospinal fluid. "d" and "s" prefixes indicate "deep" and "shallow" relative to the cortex. "Edge" indicates regions just outside the brain.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-mixed_desc-carpetplot_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-carpetplot_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-carpetplot_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-confoundcorr_subject-11_suffix-bold_task-mixed" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Correlations among nuisance regressors</h3><p class="elem-caption">Left: Heatmap summarizing the correlation structure among confound variables.
+(Cosine bases and PCA-derived CompCor components are inherently orthogonal.)
+Right: magnitude of the correlation between each confound time series and the
+mean global signal. Strong correlations might be indicative of partial volume
+effects and can inform decisions about feature orthogonalization prior to
+confound regression.
+</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-mixed_desc-confoundcorr_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-mixed_desc-confoundcorr_bold.svg" target="_blank">sub-11/figures/sub-11_task-mixed_desc-confoundcorr_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-summary_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: task <span class="bids-entity">rest</span>.</h2>                    <details open>
+		<summary>Summary</summary>
+		<ul class="elem-desc">
+			<li>Original orientation: LAS</li>
+			<li>Repetition time (TR): 1.5s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Single-echo EPI sequence.</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: FMB (fieldmap-based) - phase-difference map</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Non-steady-state volumes: 0</li>
+		</ul>
+		</details>
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-fmapCoreg_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Alignment between the anatomical reference of the fieldmap and the target EPI</h3><p class="elem-caption">The estimated fieldmap was aligned to the corresponding EPI reference with a rigid-registration process of the fieldmap reference image, using <code>antsRegistration</code>. Overlaid on top of the co-registration results, the final BOLD mask is represented with a red contour for reference.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-rest_desc-fmapCoreg_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-rest_desc-fmapCoreg_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-fmapCoreg_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-fmapCoreg_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-sdc_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Susceptibility distortion correction</h3><p class="elem-caption">Results of performing susceptibility distortion correction (SDC) on the BOLD reference image. The "distorted" image is the image that would be used to align to the anatomical reference if SDC were not applied. The "corrected" image is the image that was used.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-rest_desc-sdc_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-rest_desc-sdc_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-sdc_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-sdc_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-coreg_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Alignment of functional and anatomical MRI data (coregistration)</h3><p class="elem-caption">This panel shows the alignment of the reference EPI (BOLD) image to the anatomical (T1-weighted) image. The reference EPI has been contrast enhanced and susceptibility-distortion corrected (if applicable) for improved anatomical fidelity. The anatomical image has been resampled into EPI space, as well as the anatomical white matter mask, which appears as a red contour.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-11/figures/sub-11_task-rest_desc-coreg_bold.svg" style="">
+Problem loading figure sub-11/figures/sub-11_task-rest_desc-coreg_bold.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-coreg_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-coreg_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-rois_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Brain mask and (anatomical/temporal) CompCor ROIs</h3><p class="elem-caption">Brain mask calculated on the BOLD signal (red contour), along with the regions of interest (ROIs) used for the estimation of physiological and movement confounding components that can be then used as nuisance regressors in analysis.<br /> The <em>anatomical CompCor</em> ROI (magenta contour) is a mask combining CSF and WM (white-matter), where voxels containing a minimal partial volume of GM have been removed.<br /> The <em>temporal CompCor</em> ROI (blue contour) contains the top 2% most variable voxels within the brain mask.<br /> The <em>brain edge</em> (or <em>crown</em>) ROI (green contour) picks signals outside but close to the brain, which are decomposed into 24 principal components.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-rest_desc-rois_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-rois_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-rois_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-compcorvar_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Variance explained by t/aCompCor components</h3><p class="elem-caption">The cumulative variance explained by the first k components of the <em>t/aCompCor</em> decomposition, plotted for all values of <em>k</em>. The number of components that must be included in the model in order to explain some fraction of variance in the decomposition mask can be used as a feature selection criterion for confound regression.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-rest_desc-compcorvar_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-compcorvar_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-compcorvar_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-carpetplot_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">BOLD Summary</h3><p class="elem-caption">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br /> A carpet plot shows the time series for all voxels within the brain mask, or if <code>--cifti-output</code> was enabled, all grayordinates. See the figure legend for specific color mappings. "Ctx" = cortex, "Cb" = cerebellum, "WM" = white matter, "CSF" = cerebrospinal fluid. "d" and "s" prefixes indicate "deep" and "shallow" relative to the cortex. "Edge" indicates regions just outside the brain.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-rest_desc-carpetplot_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-carpetplot_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-carpetplot_bold.svg</a></small>
+
+        </div>
+        <div id="acquisition-None_datatype-figures_desc-confoundcorr_subject-11_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Correlations among nuisance regressors</h3><p class="elem-caption">Left: Heatmap summarizing the correlation structure among confound variables.
+(Cosine bases and PCA-derived CompCor components are inherently orthogonal.)
+Right: magnitude of the correlation between each confound time series and the
+mean global signal. Strong correlations might be indicative of partial volume
+effects and can inform decisions about feature orthogonalization prior to
+confound regression.
+</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-11/figures/sub-11_task-rest_desc-confoundcorr_bold.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-11/figures/sub-11_task-rest_desc-confoundcorr_bold.svg" target="_blank">sub-11/figures/sub-11_task-rest_desc-confoundcorr_bold.svg</a></small>
+
+        </div>
+    </div>
     <div id="About" class="mt-5">
     <h1 class="sub-report-title pt-5 ps-4">About</h1>
         <div id="datatype-figures_desc-about_subject-11_suffix-T1w" class="ps-4 pe-4 mb-2">
                     <ul>
 		<li>fMRIPrep version: 24.1.0.dev28+gfe7c9ff8.d20240822</li>
-		<li>fMRIPrep command: <code>/home/oesteban/.miniconda3/envs/fmriprep/bin/fmriprep /data/datasets/bootcamp/bidsdata /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/ participant --nprocs 8 --omp-nthreads 12 -w work -vv --skip-bids-validation --anat-only --bids-filter-file bids-filters.json</code></li>
-		<li>Date preprocessed: 2024-09-02 14:22:53 +0200</li>
+		<li>fMRIPrep command: <code>/home/oesteban/.miniconda3/envs/fmriprep/bin/fmriprep /data/datasets/bootcamp/bidsdata /data/derivatives/bootcamp-geneva/fmriprep-24.0.0/ participant --nprocs 8 --omp-nthreads 12 -w work -vv --skip-bids-validation --bids-filter-file bids-filters.json</code></li>
+		<li>Date preprocessed: 2024-09-05 12:34:55 +0200</li>
 	</ul>
 </div>
         </div>
@@ -135,6 +312,15 @@ class="citation" data-cites="fmriprep1">Esteban et al. (2019)</span>;
 (2011)</span>; <span class="citation" data-cites="nipype2">K. J.
 Gorgolewski et al. (2018)</span>; RRID:SCR_002502).</p>
 <dl>
+<dt>Preprocessing of B<sub>0</sub> inhomogeneity mappings</dt>
+<dd>
+<p>A total of 1 fieldmaps were found available within the input BIDS
+structure for this particular subject. A <em>B<sub>0</sub></em>
+nonuniformity map (or <em>fieldmap</em>) was estimated from the
+phase-drift map(s) measure with two consecutive GRE (gradient-recalled
+echo) acquisitions. The corresponding phase-map(s) were phase-unwrapped
+with <code>prelude</code> (FSL 6.0.7.12).</p>
+</dd>
 <dt>Anatomical data preprocessing</dt>
 <dd>
 <p>A total of 1 T1-weighted (T1w) images were found within the input
@@ -178,6 +364,78 @@ class="citation" data-cites="mni152nlin2009casym">Fonov et al.
 (2009)</span>, RRID:SCR_008796; TemplateFlow ID:
 MNI152NLin2009cAsym].</p>
 </dd>
+<dt>Functional data preprocessing</dt>
+<dd>
+<p>For each of the 2 BOLD runs found per subject (across all tasks and
+sessions), the following preprocessing was performed. First, a reference
+volume was generated, using a custom methodology of <em>fMRIPrep</em>,
+for use in head motion correction. Head-motion parameters with respect
+to the BOLD reference (transformation matrices, and six corresponding
+rotation and translation parameters) are estimated before any
+spatiotemporal filtering using <code>mcflirt</code> <span
+class="citation" data-cites="mcflirt">(FSL 6.0.7.12, Jenkinson et al.
+2002)</span>. The estimated <em>fieldmap</em> was then aligned with
+rigid-registration to the target EPI (echo-planar imaging) reference
+run. The field coefficients were mapped on to the reference EPI using
+the transform. The BOLD reference was then co-registered to the T1w
+reference using <code>bbregister</code> (FreeSurfer) which implements
+boundary-based registration <span class="citation"
+data-cites="bbr">(Greve and Fischl 2009)</span>. Co-registration was
+configured with six degrees of freedom. The aligned T2w image was used
+for initial co-registration.Several confounding time-series were
+calculated based on the <em>preprocessed BOLD</em>: framewise
+displacement (FD), DVARS and three region-wise global signals. FD was
+computed using two formulations following Power (absolute sum of
+relative motions, <span class="citation"
+data-cites="power_fd_dvars">Power et al. (2014)</span>) and Jenkinson
+(relative root mean square displacement between affines, <span
+class="citation" data-cites="mcflirt">Jenkinson et al. (2002)</span>).
+FD and DVARS are calculated for each functional run, both using their
+implementations in <em>Nipype</em> <span class="citation"
+data-cites="power_fd_dvars">(following the definitions by Power et al.
+2014)</span>. The three global signals are extracted within the CSF, the
+WM, and the whole-brain masks. Additionally, a set of physiological
+regressors were extracted to allow for component-based noise correction
+<span class="citation" data-cites="compcor">(<em>CompCor</em>, Behzadi
+et al. 2007)</span>. Principal components are estimated after high-pass
+filtering the <em>preprocessed BOLD</em> time-series (using a discrete
+cosine filter with 128s cut-off) for the two <em>CompCor</em> variants:
+temporal (tCompCor) and anatomical (aCompCor). tCompCor components are
+then calculated from the top 2% variable voxels within the brain mask.
+For aCompCor, three probabilistic masks (CSF, WM and combined CSF+WM)
+are generated in anatomical space. The implementation differs from that
+of Behzadi et al. in that instead of eroding the masks by 2 pixels on
+BOLD space, a mask of pixels that likely contain a volume fraction of GM
+is subtracted from the aCompCor masks. This mask is obtained by dilating
+a GM mask extracted from the FreeSurfer’s <em>aseg</em> segmentation,
+and it ensures components are not extracted from voxels containing a
+minimal fraction of GM. Finally, these masks are resampled into BOLD
+space and binarized by thresholding at 0.99 (as in the original
+implementation). Components are also calculated separately within the WM
+and CSF masks. For each CompCor decomposition, the <em>k</em> components
+with the largest singular values are retained, such that the retained
+components’ time series are sufficient to explain 50 percent of variance
+across the nuisance mask (CSF, WM, combined, or temporal). The remaining
+components are dropped from consideration. The head-motion estimates
+calculated in the correction step were also placed within the
+corresponding confounds file. The confound time series derived from head
+motion estimates and global signals were expanded with the inclusion of
+temporal derivatives and quadratic terms for each <span class="citation"
+data-cites="confounds_satterthwaite_2013">(Satterthwaite et al.
+2013)</span>. Frames that exceeded a threshold of 0.5 mm FD or 1.5
+standardized DVARS were annotated as motion outliers. Additional
+nuisance timeseries are calculated by means of principal components
+analysis of the signal found within a thin band (<em>crown</em>) of
+voxels around the edge of the brain, as proposed by <span
+class="citation" data-cites="patriat_improved_2017">(Patriat, Reynolds,
+and Birn 2017)</span>. All resamplings can be performed with <em>a
+single interpolation step</em> by composing all the pertinent
+transformations (i.e. head-motion transform matrices, susceptibility
+distortion correction when available, and co-registrations to anatomical
+and output spaces). Gridded (volumetric) resamplings were performed
+using <code>nitransforms</code>, configured with cubic B-spline
+interpolation.</p>
+</dd>
 </dl>
 <p>Many internal operations of <em>fMRIPrep</em> use <em>Nilearn</em>
 0.10.4 <span class="citation" data-cites="nilearn">(Abraham et al. 2014,
@@ -210,6 +468,13 @@ Cross-Correlation: Evaluating Automated Labeling of Elderly and
 Neurodegenerative Brain.”</span> <em>Medical Image Analysis</em> 12 (1):
 26–41. <a
 href="https://doi.org/10.1016/j.media.2007.06.004">https://doi.org/10.1016/j.media.2007.06.004</a>.
+</div>
+<div id="ref-compcor" class="csl-entry" role="listitem">
+Behzadi, Yashar, Khaled Restom, Joy Liau, and Thomas T. Liu. 2007.
+<span>“A Component Based Noise Correction Method (<span>CompCor</span>)
+for <span>BOLD</span> and Perfusion Based fMRI.”</span>
+<em>NeuroImage</em> 37 (1): 90–101. <a
+href="https://doi.org/10.1016/j.neuroimage.2007.04.042">https://doi.org/10.1016/j.neuroimage.2007.04.042</a>.
 </div>
 <div id="ref-templateflow" class="csl-entry" role="listitem">
 Ciric, R., William H. Thompson, R. Lorenz, M. Goncalves, E. MacNicol, C.
@@ -260,12 +525,49 @@ Erik Ziegler, David Gage Ellis, Michael Philipp Notter, Dorota Jarecka,
 et al. 2018. <span>“Nipype.”</span> <em>Software</em>. <a
 href="https://doi.org/10.5281/zenodo.596855">https://doi.org/10.5281/zenodo.596855</a>.
 </div>
+<div id="ref-bbr" class="csl-entry" role="listitem">
+Greve, Douglas N, and Bruce Fischl. 2009. <span>“Accurate and Robust
+Brain Image Alignment Using Boundary-Based Registration.”</span>
+<em>NeuroImage</em> 48 (1): 63–72. <a
+href="https://doi.org/10.1016/j.neuroimage.2009.06.060">https://doi.org/10.1016/j.neuroimage.2009.06.060</a>.
+</div>
+<div id="ref-mcflirt" class="csl-entry" role="listitem">
+Jenkinson, Mark, Peter Bannister, Michael Brady, and Stephen Smith.
+2002. <span>“Improved Optimization for the Robust and Accurate Linear
+Registration and Motion Correction of Brain Images.”</span>
+<em>NeuroImage</em> 17 (2): 825–41. <a
+href="https://doi.org/10.1006/nimg.2002.1132">https://doi.org/10.1006/nimg.2002.1132</a>.
+</div>
 <div id="ref-mindboggle" class="csl-entry" role="listitem">
 Klein, Arno, Satrajit S. Ghosh, Forrest S. Bao, Joachim Giard, Yrjö
 Häme, Eliezer Stavsky, Noah Lee, et al. 2017. <span>“Mindboggling
 Morphometry of Human Brains.”</span> <em>PLOS Computational Biology</em>
 13 (2): e1005350. <a
 href="https://doi.org/10.1371/journal.pcbi.1005350">https://doi.org/10.1371/journal.pcbi.1005350</a>.
+</div>
+<div id="ref-patriat_improved_2017" class="csl-entry" role="listitem">
+Patriat, Rémi, Richard C. Reynolds, and Rasmus M. Birn. 2017. <span>“An
+Improved Model of Motion-Related Signal Changes in <span
+class="nocase">fMRI</span>.”</span> <em>NeuroImage</em> 144, Part A
+(January): 74–82. <a
+href="https://doi.org/10.1016/j.neuroimage.2016.08.051">https://doi.org/10.1016/j.neuroimage.2016.08.051</a>.
+</div>
+<div id="ref-power_fd_dvars" class="csl-entry" role="listitem">
+Power, Jonathan D., Anish Mitra, Timothy O. Laumann, Abraham Z. Snyder,
+Bradley L. Schlaggar, and Steven E. Petersen. 2014. <span>“Methods to
+Detect, Characterize, and Remove Motion Artifact in Resting State
+fMRI.”</span> <em>NeuroImage</em> 84 (Supplement C): 320–41. <a
+href="https://doi.org/10.1016/j.neuroimage.2013.08.048">https://doi.org/10.1016/j.neuroimage.2013.08.048</a>.
+</div>
+<div id="ref-confounds_satterthwaite_2013" class="csl-entry"
+role="listitem">
+Satterthwaite, Theodore D., Mark A. Elliott, Raphael T. Gerraty, Kosha
+Ruparel, James Loughead, Monica E. Calkins, Simon B. Eickhoff, et al.
+2013. <span>“<span class="nocase">An improved framework for confound
+regression and filtering for control of motion artifact in the
+preprocessing of resting-state functional connectivity
+data</span>.”</span> <em>NeuroImage</em> 64 (1): 240–56. <a
+href="https://doi.org/10.1016/j.neuroimage.2012.08.052">https://doi.org/10.1016/j.neuroimage.2012.08.052</a>.
 </div>
 <div id="ref-n4" class="csl-entry" role="listitem">
 Tustison, N. J., B. B. Avants, P. A. Cook, Y. Zheng, A. Egan, P. A.
@@ -293,6 +595,16 @@ performed using *fMRIPrep* 24.1.0.dev28+gfe7c9ff8.d20240822
 which is based on *Nipype* 1.8.6
 (@nipype1; @nipype2; RRID:SCR_002502).
 
+
+
+Preprocessing of B<sub>0</sub> inhomogeneity mappings
+
+: A total of 1 fieldmaps were found available within the input
+BIDS structure for this particular subject.
+A *B<sub>0</sub>* nonuniformity map (or *fieldmap*) was estimated from the
+phase-drift map(s) measure with two consecutive GRE (gradient-recalled echo)
+acquisitions.
+The corresponding phase-map(s) were phase-unwrapped with `prelude` (FSL 6.0.7.12).
 
 Anatomical data preprocessing
 
@@ -324,6 +636,72 @@ The following template was were selected for spatial normalization
 and accessed with *TemplateFlow* [24.2.0, @templateflow]:
 *ICBM 152 Nonlinear Asymmetrical template version 2009c* [@mni152nlin2009casym, RRID:SCR_008796; TemplateFlow ID: MNI152NLin2009cAsym].
 
+Functional data preprocessing
+
+: For each of the 2 BOLD runs found per subject (across all
+tasks and sessions), the following preprocessing was performed.
+First, a reference volume was generated,
+using a custom methodology of *fMRIPrep*, for use in head motion correction.
+Head-motion parameters with respect to the BOLD reference
+(transformation matrices, and six corresponding rotation and translation
+parameters) are estimated before any spatiotemporal filtering using
+`mcflirt` [FSL 6.0.7.12, @mcflirt].
+The estimated *fieldmap* was then aligned with rigid-registration to the target
+EPI (echo-planar imaging) reference run.
+The field coefficients were mapped on to the reference EPI using the transform.
+The BOLD reference was then co-registered to the T1w reference using
+`bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
+Co-registration was configured with six degrees of freedom.
+ The aligned T2w image was used for initial co-registration.Several confounding time-series were calculated based on the
+*preprocessed BOLD*: framewise displacement (FD), DVARS and
+three region-wise global signals.
+FD was computed using two formulations following Power (absolute sum of
+relative motions, @power_fd_dvars) and Jenkinson (relative root mean square
+displacement between affines, @mcflirt).
+FD and DVARS are calculated for each functional run, both using their
+implementations in *Nipype* [following the definitions by @power_fd_dvars].
+The three global signals are extracted within the CSF, the WM, and
+the whole-brain masks.
+Additionally, a set of physiological regressors were extracted to
+allow for component-based noise correction [*CompCor*, @compcor].
+Principal components are estimated after high-pass filtering the
+*preprocessed BOLD* time-series (using a discrete cosine filter with
+128s cut-off) for the two *CompCor* variants: temporal (tCompCor)
+and anatomical (aCompCor).
+tCompCor components are then calculated from the top 2% variable
+voxels within the brain mask.
+For aCompCor, three probabilistic masks (CSF, WM and combined CSF+WM)
+are generated in anatomical space.
+The implementation differs from that of Behzadi et al. in that instead
+of eroding the masks by 2 pixels on BOLD space, a mask of pixels that
+likely contain a volume fraction of GM is subtracted from the aCompCor masks.
+This mask is obtained by dilating a GM mask extracted from the FreeSurfer's *aseg* segmentation, and it ensures components are not extracted
+from voxels containing a minimal fraction of GM.
+Finally, these masks are resampled into BOLD space and binarized by
+thresholding at 0.99 (as in the original implementation).
+Components are also calculated separately within the WM and CSF masks.
+For each CompCor decomposition, the *k* components with the largest singular
+values are retained, such that the retained components' time series are
+sufficient to explain 50 percent of variance across the nuisance mask (CSF,
+WM, combined, or temporal). The remaining components are dropped from
+consideration.
+The head-motion estimates calculated in the correction step were also
+placed within the corresponding confounds file.
+The confound time series derived from head motion estimates and global
+signals were expanded with the inclusion of temporal derivatives and
+quadratic terms for each [@confounds_satterthwaite_2013].
+Frames that exceeded a threshold of 0.5 mm FD or
+1.5 standardized DVARS were annotated as motion outliers.
+Additional nuisance timeseries are calculated by means of principal components
+analysis of the signal found within a thin band (*crown*) of voxels around
+the edge of the brain, as proposed by [@patriat_improved_2017].
+All resamplings can be performed with *a single interpolation
+step* by composing all the pertinent transformations (i.e. head-motion
+transform matrices, susceptibility distortion correction when available,
+and co-registrations to anatomical and output spaces).
+Gridded (volumetric) resamplings were performed using `nitransforms`,
+configured with cubic B-spline interpolation.
+
 
 Many internal operations of *fMRIPrep* use
 *Nilearn* 0.10.4 [@nilearn, RRID:SCR_001362],
@@ -353,6 +731,13 @@ on \emph{Nipype} 1.8.6 (\citet{nipype1}; \citet{nipype2};
 RRID:SCR\_002502).
 
 \begin{description}
+\item[Preprocessing of B0 inhomogeneity mappings]
+A total of 1 fieldmaps were found available within the input BIDS
+structure for this particular subject. A \emph{B0} nonuniformity map (or
+\emph{fieldmap}) was estimated from the phase-drift map(s) measure with
+two consecutive GRE (gradient-recalled echo) acquisitions. The
+corresponding phase-map(s) were phase-unwrapped with \texttt{prelude}
+(FSL 6.0.7.12).
 \item[Anatomical data preprocessing]
 A total of 1 T1-weighted (T1w) images were found within the input BIDS
 dataset. The T1w image was corrected for intensity non-uniformity (INU)
@@ -385,6 +770,68 @@ normalization and accessed with \emph{TemplateFlow}
 \citep[24.2.0,][]{templateflow}: \emph{ICBM 152 Nonlinear Asymmetrical
 template version 2009c} {[}\citet{mni152nlin2009casym},
 RRID:SCR\_008796; TemplateFlow ID: MNI152NLin2009cAsym{]}.
+\item[Functional data preprocessing]
+For each of the 2 BOLD runs found per subject (across all tasks and
+sessions), the following preprocessing was performed. First, a reference
+volume was generated, using a custom methodology of \emph{fMRIPrep}, for
+use in head motion correction. Head-motion parameters with respect to
+the BOLD reference (transformation matrices, and six corresponding
+rotation and translation parameters) are estimated before any
+spatiotemporal filtering using \texttt{mcflirt} \citep[FSL
+6.0.7.12,][]{mcflirt}. The estimated \emph{fieldmap} was then aligned
+with rigid-registration to the target EPI (echo-planar imaging)
+reference run. The field coefficients were mapped on to the reference
+EPI using the transform. The BOLD reference was then co-registered to
+the T1w reference using \texttt{bbregister} (FreeSurfer) which
+implements boundary-based registration \citep{bbr}. Co-registration was
+configured with six degrees of freedom. The aligned T2w image was used
+for initial co-registration.Several confounding time-series were
+calculated based on the \emph{preprocessed BOLD}: framewise displacement
+(FD), DVARS and three region-wise global signals. FD was computed using
+two formulations following Power (absolute sum of relative motions,
+\citet{power_fd_dvars}) and Jenkinson (relative root mean square
+displacement between affines, \citet{mcflirt}). FD and DVARS are
+calculated for each functional run, both using their implementations in
+\emph{Nipype} \citep[following the definitions by][]{power_fd_dvars}.
+The three global signals are extracted within the CSF, the WM, and the
+whole-brain masks. Additionally, a set of physiological regressors were
+extracted to allow for component-based noise correction
+\citep[\emph{CompCor},][]{compcor}. Principal components are estimated
+after high-pass filtering the \emph{preprocessed BOLD} time-series
+(using a discrete cosine filter with 128s cut-off) for the two
+\emph{CompCor} variants: temporal (tCompCor) and anatomical (aCompCor).
+tCompCor components are then calculated from the top 2\% variable voxels
+within the brain mask. For aCompCor, three probabilistic masks (CSF, WM
+and combined CSF+WM) are generated in anatomical space. The
+implementation differs from that of Behzadi et al.~in that instead of
+eroding the masks by 2 pixels on BOLD space, a mask of pixels that
+likely contain a volume fraction of GM is subtracted from the aCompCor
+masks. This mask is obtained by dilating a GM mask extracted from the
+FreeSurfer's \emph{aseg} segmentation, and it ensures components are not
+extracted from voxels containing a minimal fraction of GM. Finally,
+these masks are resampled into BOLD space and binarized by thresholding
+at 0.99 (as in the original implementation). Components are also
+calculated separately within the WM and CSF masks. For each CompCor
+decomposition, the \emph{k} components with the largest singular values
+are retained, such that the retained components' time series are
+sufficient to explain 50 percent of variance across the nuisance mask
+(CSF, WM, combined, or temporal). The remaining components are dropped
+from consideration. The head-motion estimates calculated in the
+correction step were also placed within the corresponding confounds
+file. The confound time series derived from head motion estimates and
+global signals were expanded with the inclusion of temporal derivatives
+and quadratic terms for each \citep{confounds_satterthwaite_2013}.
+Frames that exceeded a threshold of 0.5 mm FD or 1.5 standardized DVARS
+were annotated as motion outliers. Additional nuisance timeseries are
+calculated by means of principal components analysis of the signal found
+within a thin band (\emph{crown}) of voxels around the edge of the
+brain, as proposed by \citep{patriat_improved_2017}. All resamplings can
+be performed with \emph{a single interpolation step} by composing all
+the pertinent transformations (i.e.~head-motion transform matrices,
+susceptibility distortion correction when available, and
+co-registrations to anatomical and output spaces). Gridded (volumetric)
+resamplings were performed using \texttt{nitransforms}, configured with
+cubic B-spline interpolation.
 \end{description}
 
 Many internal operations of \emph{fMRIPrep} use \emph{Nilearn} 0.10.4

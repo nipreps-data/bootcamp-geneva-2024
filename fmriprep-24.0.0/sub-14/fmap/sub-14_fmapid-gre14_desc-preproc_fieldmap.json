@@ -1,0 +1,14 @@
+{
+  "AnatomicalReference": "sub-14_fmapid-gre14_desc-magnitude_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-14_fmapid-gre14_desc-coeff_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "gre14",
+  "IntendedFor": [],
+  "RawSources": [
+    "/data/datasets/bootcamp/bidsdata/sub-14/fmap/sub-14_magnitude1.nii.gz",
+    "/data/datasets/bootcamp/bidsdata/sub-14/fmap/sub-14_magnitude2.nii.gz",
+    "/data/datasets/bootcamp/bidsdata/sub-14/fmap/sub-14_phasediff.nii.gz"
+  ],
+  "Units": "Hz"
+}
