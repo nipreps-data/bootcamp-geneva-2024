@@ -12,11 +12,11 @@
     "HowToAcknowledge": "Please cite our paper (https://doi.org/10.1038/s41592-018-0235-4), and include the generated citation boilerplate within the Methods section of the text.",
     "SourceDatasets": [
         {
-            "URL": "https://doi.org/TODO: eventually a DOI for the dataset",
-            "DOI": "TODO: eventually a DOI for the dataset"
+            "URL": "https://doi.org/10.18112/openneuro.ds005454.v1.0.0",
+            "DOI": "10.18112/openneuro.ds005454.v1.0.0"
         }
     ],
-    "License": "TODO: choose a license, e.g. PDDL (http://opendatacommons.org/licenses/pddl/)",
+    "License": "CC-BY",
     "DatasetLinks": {
         "raw": "/data/datasets/bootcamp/bidsdata",
         "templateflow": "https://github.com/templateflow/templateflow"
